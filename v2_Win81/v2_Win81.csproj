@@ -21,7 +21,7 @@
     <MinimumVisualStudioVersion>12</MinimumVisualStudioVersion>
     <TargetFrameworkVersion />
     <AppxBundle>Never</AppxBundle>
-    <NuGetPackageImportStamp>cee3ae47</NuGetPackageImportStamp>
+    <NuGetPackageImportStamp>3efa2693</NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -116,7 +116,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BasicTests.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">
@@ -141,14 +140,17 @@
   </ItemGroup>
   <ItemGroup>
     <Reference Include="xunit.abstractions">
-      <HintPath>..\packages\xunit.abstractions.99.99.99\lib\portable-net45+win+wpa81+wp80+monotouch+monoandroid\xunit.abstractions.dll</HintPath>
+      <HintPath>..\packages\xunit.abstractions.99.99.99\lib\portable-net45+aspnetcore50+win+wpa81+wp80+monotouch+monoandroid\xunit.abstractions.dll</HintPath>
     </Reference>
     <Reference Include="xunit.assert">
-      <HintPath>..\packages\xunit.assert.99.99.99\lib\portable-net45+win+wpa81+wp80+monoandroid+monotouch10\xunit.assert.dll</HintPath>
+      <HintPath>..\packages\xunit.assert.99.99.99\lib\portable-net45+aspnetcore50+win+wpa81+wp80+monoandroid+monotouch10\xunit.assert.dll</HintPath>
     </Reference>
     <Reference Include="xunit.core">
-      <HintPath>..\packages\xunit.core.99.99.99\lib\portable-net45+win+wpa81+wp80+monotouch+monoandroid\xunit.core.dll</HintPath>
+      <HintPath>..\packages\xunit.core.99.99.99\lib\portable-net45+aspnetcore50+win+wpa81+wp80+monotouch+monoandroid\xunit.core.dll</HintPath>
     </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '12.0' ">
     <VisualStudioVersion>12.0</VisualStudioVersion>

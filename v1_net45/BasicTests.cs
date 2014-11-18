@@ -1,8 +1,9 @@
 ﻿using System;
 using System.Threading.Tasks;
 using Xunit;
+using Xunit.Extensions;
 
-namespace v2_net45
+namespace v1_net45
 {
     public class BasicTests
     {

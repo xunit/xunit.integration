@@ -1,10 +1,8 @@
-﻿using System;
-using System.Threading.Tasks;
-using Xunit;
+﻿using Xunit;
 
-namespace v2_net45
+namespace MSTest_and_v2
 {
-    public class BasicTests
+    public class BasicTests_xUnit
     {
         [Fact]
         public void Passing()
@@ -25,12 +23,6 @@ namespace v2_net45
         public void Theory(object value)
         {
             Assert.NotNull(value);
-        }
-
-        [Fact]
-        public async Task TestSample()
-        {
-            throw new OperationCanceledException();
         }
     }
 }
