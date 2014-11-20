@@ -17,6 +17,8 @@ help
 *.ncrunch*
 *.vsix
 
+*.ide/
+
 Test*.html
 Test*.xml
 
