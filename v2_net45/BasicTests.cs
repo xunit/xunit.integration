@@ -26,11 +26,5 @@ namespace v2_net45
         {
             Assert.NotNull(value);
         }
-
-        [Fact]
-        public async Task TestSample()
-        {
-            throw new OperationCanceledException();
-        }
     }
 }

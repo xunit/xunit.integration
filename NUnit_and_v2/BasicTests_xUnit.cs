@@ -1,11 +1,8 @@
-﻿using System;
-using System.Threading.Tasks;
-using Xunit;
-using Xunit.Extensions;
+﻿using Xunit;
 
-namespace v1_net45
+namespace NUnit_and_v2
 {
-    public class BasicTests
+    public class BasicTests_xUnit
     {
         [Fact]
         public void Passing()
