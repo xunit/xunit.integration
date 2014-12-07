@@ -25,6 +25,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NUnit_and_v2", "NUnit_and_v
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "v2_WP8", "v2_WP8\v2_WP8.csproj", "{F87423F8-83CD-44DA-9CD2-01F26A74F86A}"
 EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "v2_net45_FSharp", "v2_net45_FSharp\v2_net45_FSharp.fsproj", "{656EF85A-A205-426F-8B79-2969DC118BE2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -203,6 +205,18 @@ Global
 		{F87423F8-83CD-44DA-9CD2-01F26A74F86A}.Release|x86.ActiveCfg = Release|x86
 		{F87423F8-83CD-44DA-9CD2-01F26A74F86A}.Release|x86.Build.0 = Release|x86
 		{F87423F8-83CD-44DA-9CD2-01F26A74F86A}.Release|x86.Deploy.0 = Release|x86
+		{656EF85A-A205-426F-8B79-2969DC118BE2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{656EF85A-A205-426F-8B79-2969DC118BE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{656EF85A-A205-426F-8B79-2969DC118BE2}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{656EF85A-A205-426F-8B79-2969DC118BE2}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{656EF85A-A205-426F-8B79-2969DC118BE2}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{656EF85A-A205-426F-8B79-2969DC118BE2}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{656EF85A-A205-426F-8B79-2969DC118BE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{656EF85A-A205-426F-8B79-2969DC118BE2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{656EF85A-A205-426F-8B79-2969DC118BE2}.Release|ARM.ActiveCfg = Release|Any CPU
+		{656EF85A-A205-426F-8B79-2969DC118BE2}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{656EF85A-A205-426F-8B79-2969DC118BE2}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{656EF85A-A205-426F-8B79-2969DC118BE2}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
