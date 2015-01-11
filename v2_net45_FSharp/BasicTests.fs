@@ -1,4 +1,4 @@
-﻿namespace v2_net45_FSharp
+﻿namespace FSharp
 
 open Xunit
 

@@ -1,49 +1,46 @@
 ﻿using System;
 using Xunit;
 
-namespace v2_net45
+public class FailingFixture : IDisposable
 {
-    public class FailingFixture : IDisposable
+    public void Dispose()
     {
-        public void Dispose()
-        {
-            throw new NotImplementedException();
-        }
+        throw new NotImplementedException();
+    }
+}
+
+public class ClassFixtureFailure : IClassFixture<FailingFixture>
+{
+    [Fact]
+    public void Passing()
+    {
+        Assert.True(true);
     }
 
-    public class ClassFixtureFailure : IClassFixture<FailingFixture>
+    [Fact]
+    public void Failing()
     {
-        [Fact]
-        public void Passing()
-        {
-            Assert.True(true);
-        }
+        Assert.True(false);
+    }
+}
 
-        [Fact]
-        public void Failing()
-        {
-            Assert.True(false);
-        }
+[CollectionDefinition("MyCollection")]
+public class MyCollection : ICollectionFixture<FailingFixture>
+{
+}
+
+[Collection("MyCollection")]
+public class CollectionFixtureFailure
+{
+    [Fact]
+    public void Passing()
+    {
+        Assert.True(true);
     }
 
-    [CollectionDefinition("MyCollection")]
-    public class MyCollection : ICollectionFixture<FailingFixture>
+    [Fact]
+    public void Failing()
     {
-    }
-
-    [Collection("MyCollection")]
-    public class CollectionFixtureFailure
-    {
-        [Fact]
-        public void Passing()
-        {
-            Assert.True(true);
-        }
-
-        [Fact]
-        public void Failing()
-        {
-            Assert.True(false);
-        }
+        Assert.True(false);
     }
 }

@@ -1,28 +1,25 @@
 ﻿using Xunit;
 
-namespace v2_PCL
+public class BasicTests
 {
-    public class BasicTests
+    [Fact]
+    public void Passing()
     {
-        [Fact]
-        public void Passing()
-        {
-            Assert.True(true);
-        }
+        Assert.True(true);
+    }
 
-        [Fact]
-        public void Failing()
-        {
-            Assert.True(false);
-        }
+    [Fact]
+    public void Failing()
+    {
+        Assert.True(false);
+    }
 
-        [Theory]
-        [InlineData(2112)]
-        [InlineData("hello")]
-        [InlineData(null)]
-        public void Theory(object value)
-        {
-            Assert.NotNull(value);
-        }
+    [Theory]
+    [InlineData(2112)]
+    [InlineData("hello")]
+    [InlineData(null)]
+    public void Theory(object value)
+    {
+        Assert.NotNull(value);
     }
 }

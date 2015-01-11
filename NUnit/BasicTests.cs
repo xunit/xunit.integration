@@ -1,19 +1,16 @@
 ﻿using NUnit.Framework;
 
-namespace NUnit
+public class BasicTests
 {
-    public class BasicTests
+    [Test]
+    public void Passing()
     {
-        [Test]
-        public void Passing()
-        {
-            Assert.IsTrue(true);
-        }
+        Assert.IsTrue(true);
+    }
 
-        [Test]
-        public void Failing()
-        {
-            Assert.IsTrue(false);
-        }
+    [Test]
+    public void Failing()
+    {
+        Assert.IsTrue(false);
     }
 }
