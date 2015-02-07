@@ -22,4 +22,12 @@ public class BasicTests
     {
         Assert.NotNull(value);
     }
+
+    [Fact]
+    public void InvalidFact(object x) { }  // Facts can't have parameters
+
+    [Theory]
+    [InlineData(42, "Hello World", 21.12)]  // Too much data
+    [InlineData(2600)]                      // Not enough data
+    public void InvalidTheory(int x, string y) { }
 }

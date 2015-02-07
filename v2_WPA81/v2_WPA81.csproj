@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="..\packages\xunit.core.2.0.0-rc1-build2844\build\portable-win81+wpa81\xunit.core.props" Condition="Exists('..\packages\xunit.core.2.0.0-rc1-build2844\build\portable-win81+wpa81\xunit.core.props')" />
+  <Import Project="..\packages\xunit.core.2.0.0-rc1-build2846\build\portable-win81+wpa81\xunit.core.props" Condition="Exists('..\packages\xunit.core.2.0.0-rc1-build2846\build\portable-win81+wpa81\xunit.core.props')" />
   <Import Project="..\packages\xunit.runner.visualstudio.2.0.0-rc1-build1038\build\wpa81\xunit.runner.visualstudio.props" Condition="Exists('..\packages\xunit.runner.visualstudio.2.0.0-rc1-build1038\build\wpa81\xunit.runner.visualstudio.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -20,7 +20,7 @@
     <AppxBundle>Never</AppxBundle>
     <IsTargetingWindowsPhonePlatform>true</IsTargetingWindowsPhonePlatform>
     <AllowCrossPlatformRetargeting>False</AllowCrossPlatformRetargeting>
-    <NuGetPackageImportStamp>be50e71c</NuGetPackageImportStamp>
+    <NuGetPackageImportStamp>35ece3d5</NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup>
     <AppXPackage>True</AppXPackage>
@@ -104,13 +104,13 @@
   </ItemGroup>
   <ItemGroup>
     <Reference Include="xunit.abstractions, Version=2.0.0.0, Culture=neutral, PublicKeyToken=8d05b1bb7a6fdb6c, processorArchitecture=MSIL">
-      <HintPath>..\packages\xunit.abstractions.2.0.0-rc1-build2844\lib\portable-net45+aspnetcore50+win+wpa81+wp80+monotouch+monoandroid+Xamarin.iOS\xunit.abstractions.dll</HintPath>
+      <HintPath>..\packages\xunit.abstractions.2.0.0-rc1-build2846\lib\portable-net45+aspnetcore50+win+wpa81+wp80+monotouch+monoandroid+Xamarin.iOS\xunit.abstractions.dll</HintPath>
     </Reference>
     <Reference Include="xunit.assert">
-      <HintPath>..\packages\xunit.assert.2.0.0-rc1-build2844\lib\portable-net45+aspnetcore50+win+wpa81+wp80+monotouch+monoandroid+Xamarin.iOS\xunit.assert.dll</HintPath>
+      <HintPath>..\packages\xunit.assert.2.0.0-rc1-build2846\lib\portable-net45+aspnetcore50+win+wpa81+wp80+monotouch+monoandroid+Xamarin.iOS\xunit.assert.dll</HintPath>
     </Reference>
     <Reference Include="xunit.core">
-      <HintPath>..\packages\xunit.extensibility.core.2.0.0-rc1-build2844\lib\portable-net45+aspnetcore50+win+wpa81+wp80+monotouch+monoandroid+Xamarin.iOS\xunit.core.dll</HintPath>
+      <HintPath>..\packages\xunit.extensibility.core.2.0.0-rc1-build2846\lib\portable-net45+aspnetcore50+win+wpa81+wp80+monotouch+monoandroid+Xamarin.iOS\xunit.core.dll</HintPath>
     </Reference>
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '12.0' ">
@@ -126,11 +126,11 @@
     </PropertyGroup>
     <Error Condition="!Exists('..\packages\xunit.runner.visualstudio.2.0.0-rc1-build1038\build\wpa81\xunit.runner.visualstudio.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\xunit.runner.visualstudio.2.0.0-rc1-build1038\build\wpa81\xunit.runner.visualstudio.props'))" />
     <Error Condition="!Exists('..\packages\xunit.runner.visualstudio.2.0.0-rc1-build1038\build\wpa81\xunit.runner.visualstudio.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\xunit.runner.visualstudio.2.0.0-rc1-build1038\build\wpa81\xunit.runner.visualstudio.targets'))" />
-    <Error Condition="!Exists('..\packages\xunit.core.2.0.0-rc1-build2844\build\portable-win81+wpa81\xunit.core.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\xunit.core.2.0.0-rc1-build2844\build\portable-win81+wpa81\xunit.core.props'))" />
-    <Error Condition="!Exists('..\packages\xunit.core.2.0.0-rc1-build2844\build\portable-win81+wpa81\xunit.core.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\xunit.core.2.0.0-rc1-build2844\build\portable-win81+wpa81\xunit.core.targets'))" />
+    <Error Condition="!Exists('..\packages\xunit.core.2.0.0-rc1-build2846\build\portable-win81+wpa81\xunit.core.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\xunit.core.2.0.0-rc1-build2846\build\portable-win81+wpa81\xunit.core.props'))" />
+    <Error Condition="!Exists('..\packages\xunit.core.2.0.0-rc1-build2846\build\portable-win81+wpa81\xunit.core.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\xunit.core.2.0.0-rc1-build2846\build\portable-win81+wpa81\xunit.core.targets'))" />
   </Target>
   <Import Project="..\packages\xunit.runner.visualstudio.2.0.0-rc1-build1038\build\wpa81\xunit.runner.visualstudio.targets" Condition="Exists('..\packages\xunit.runner.visualstudio.2.0.0-rc1-build1038\build\wpa81\xunit.runner.visualstudio.targets')" />
-  <Import Project="..\packages\xunit.core.2.0.0-rc1-build2844\build\portable-win81+wpa81\xunit.core.targets" Condition="Exists('..\packages\xunit.core.2.0.0-rc1-build2844\build\portable-win81+wpa81\xunit.core.targets')" />
+  <Import Project="..\packages\xunit.core.2.0.0-rc1-build2846\build\portable-win81+wpa81\xunit.core.targets" Condition="Exists('..\packages\xunit.core.2.0.0-rc1-build2846\build\portable-win81+wpa81\xunit.core.targets')" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
