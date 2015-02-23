@@ -1,7 +1,7 @@
 ﻿{
     "dependencies": {
-        "xunit": "2.0.0-rc2-build2857",
-        "xunit.runner.aspnet": "2.0.0-rc2-build50"
+        "xunit": "2.0.0-rc3-build2880",
+        "xunit.runner.aspnet": "2.0.0-rc3-build52"
     },
     "commands": {
         "test": "xunit.runner.aspnet"
