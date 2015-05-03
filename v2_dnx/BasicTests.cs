@@ -1,6 +1,6 @@
 ﻿using Xunit;
 
-namespace v2_aspnet5
+namespace v2_dnx
 {
     public class BasicTests
     {

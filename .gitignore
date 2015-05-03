@@ -16,6 +16,7 @@ help
 *.dll
 *.ncrunch*
 *.vsix
+project.lock.json
 
 *.ide/
 
