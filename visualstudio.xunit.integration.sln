@@ -2,7 +2,7 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.22823.1
-MinimumVisualStudioVersion = 14.0.22823.1
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "v1_net20", "v1_net20\v1_net20.csproj", "{AA40B46D-EB27-43F5-8CA4-EC5758959BC7}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "v2_net45", "v2_net45\v2_net45.csproj", "{06D874BC-29FE-4B68-AA7F-B4654AA4520A}"
