@@ -1,4 +1,5 @@
-﻿using Xunit;
+﻿using System.Threading.Tasks;
+using Xunit;
 
 public class BasicTests
 {
@@ -30,4 +31,18 @@ public class BasicTests
     [InlineData(42, "Hello World", 21.12)]  // Too much data
     [InlineData(2600)]                      // Not enough data
     public void InvalidTheory(int x, string y) { }
+
+    [Fact]
+    public async void FailingAsyncVoidTest()
+    {
+        await Task.Delay(0);
+        Assert.True(false);
+    }
+
+    [Fact]
+    public async Task FailingAsyncTaskTest()
+    {
+        await Task.Delay(0);
+        Assert.True(false);
+    }
 }
