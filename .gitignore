@@ -18,6 +18,7 @@ help
 *.vsix
 project.lock.json
 
+.vs/
 *.ide/
 
 Test*.html
