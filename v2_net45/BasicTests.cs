@@ -1,5 +1,24 @@
-﻿using System.Threading.Tasks;
+﻿using System.Collections.Generic;
+using System.Threading.Tasks;
 using Xunit;
+
+public class TestClass
+{
+    public static IEnumerable<object[]> GetData(int[] data1, int[] data2)
+    {
+        for (int i = 0; i < data1.Length; i++)
+        {
+            yield return new object[] { data1[i], data2[i] };
+        }
+    }
+
+    [Theory]
+    [MemberData("GetData", new int[] { 4, 5, 7 }, new int[] { 8, 10, 12 })]
+    public void RunTest(int data1, int data2)
+    {
+        Assert.Equal(data1 * 2, data2);
+    }
+}
 
 public class BasicTests
 {

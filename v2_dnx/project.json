@@ -1,21 +1,13 @@
 {
     "dependencies": {
-        "xunit": "2.1.0-beta4-build3050",
-        "xunit.runner.dnx": "2.1.0-beta4-build116"
+        "xunit": "2.1.0-beta4-*",
+        "xunit.runner.dnx": "2.1.0-beta4-*"
     },
     "commands": {
         "test": "xunit.runner.dnx"
     },
     "frameworks": {
-        "dnx451": {
-            "frameworkAssemblies": {
-                "System.Runtime": ""
-            }
-        },
-        "dnx50": {
-            "dependencies": {
-                "System.Runtime": "4.0.20-beta-*"
-            }
-        }
+        "dnx46": { },
+        "dnxcore50": { }
     }
 }
