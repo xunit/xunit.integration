@@ -1,0 +1,7 @@
+﻿<Application
+    x:Class="Devices.Wpa81.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Devices.Wpa81">
+
+</Application>
