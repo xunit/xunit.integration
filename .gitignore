@@ -17,6 +17,8 @@ help
 *.ncrunch*
 *.vsix
 project.lock.json
+*.nuget.props
+*.nuget.targets
 
 .vs/
 *.ide/
