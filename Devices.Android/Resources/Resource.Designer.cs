@@ -26,6 +26,8 @@ namespace Devices.Android
 		
 		public static void UpdateIdValues()
 		{
+			global::Xamarin.Forms.Platform.Resource.String.ApplicationName = global::Devices.Android.Resource.String.ApplicationName;
+			global::Xamarin.Forms.Platform.Resource.String.Hello = global::Devices.Android.Resource.String.Hello;
 		}
 		
 		public partial class Attribute

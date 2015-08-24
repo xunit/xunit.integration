@@ -1,9 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-
+using System.Reflection;
 using MonoTouch.Foundation;
 using MonoTouch.UIKit;
+
+using Xunit.Runner;
+using Xunit.Sdk;
+
 
 namespace Devices.iOSClassic
 {
@@ -11,10 +15,8 @@ namespace Devices.iOSClassic
     // User Interface of the application, as well as listening (and optionally responding) to 
     // application events from iOS.
     [Register("AppDelegate")]
-    public partial class AppDelegate : UIApplicationDelegate
+    public partial class AppDelegate : RunnerAppDelegate
     {
-        // class-level declarations
-        UIWindow window;
 
         //
         // This method is invoked when the application has loaded and is ready to run. In this 
@@ -25,16 +27,25 @@ namespace Devices.iOSClassic
         //
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
-            // create a new window instance based on the screen size
-            window = new UIWindow(UIScreen.MainScreen.Bounds);
+            // We need this to ensure the execution assembly is part of the app bundle
+            AddExecutionAssembly(typeof(ExtensibilityPointFactory).Assembly);
 
-            // If you have defined a view, add it here:
-            // window.RootViewController  = navigationController;
 
-            // make the window visible
-            window.MakeKeyAndVisible();
+            // tests can be inside the main assembly
+            AddTestAssembly(Assembly.GetExecutingAssembly());
+            // otherwise you need to ensure that the test assemblies will 
+            // become part of the app bundle
+            AddTestAssembly(typeof(BasicTests).Assembly);
 
-            return true;
+#if false
+			// you can use the default or set your own custom writer (e.g. save to web site and tweet it ;-)
+			Writer = new TcpTextWriter ("10.0.1.2", 16384);
+			// start running the test suites as soon as the application is loaded
+			AutoStart = true;
+			// crash the application (to ensure it's ended) and return to springboard
+			TerminateAfterExecution = true;
+#endif
+            return base.FinishedLaunching(app, options);
         }
     }
 }

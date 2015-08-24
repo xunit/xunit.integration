@@ -1,4 +1,4 @@
-﻿using System.Reflection;
+using System.Reflection;
 using Xunit.Runners.UI;
 
 namespace Devices.Wp8
@@ -13,12 +13,12 @@ namespace Devices.Wp8
 
         protected override void OnInitializeRunner()
         {
-
+            
             // tests can be inside the main assembly
             AddTestAssembly(Assembly.GetExecutingAssembly());
             // otherwise you need to ensure that the test assemblies will 
             // become part of the app bundle
-            AddTestAssembly(typeof(BasicTests).Assembly);
+            //AddTestAssembly(typeof(PortableTests).Assembly);
 
         }
     }
