@@ -1,3 +1,4 @@
 {
-    "sdk": { "version": "1.0.0-beta7-15119" }
+    "sdk": { "version": "1.0.0-beta7-15119" },
+    "sources": [ "v2x_dnx" ]
 }
