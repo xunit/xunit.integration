@@ -1,8 +1,8 @@
 ﻿{
   "dependencies": {
     "Microsoft.NETCore.UniversalWindowsPlatform": "5.0.0",
-    "xunit": "2.1.0-rc1-build3131",
-    "xunit.runner.visualstudio": "2.1.0-rc1-build1115"
+    "xunit": "2.1.0-rc1-build3139",
+    "xunit.runner.visualstudio": "2.1.0-rc1-build1116"
   },
   "frameworks": {
     "uap10.0": {}
