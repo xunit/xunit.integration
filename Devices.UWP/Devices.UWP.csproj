@@ -79,7 +79,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
     <OutputPath>bin\x86\Release\</OutputPath>
     <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
-    <Optimize>true</Optimize>
+    <Optimize>false</Optimize>
     <NoWarn>;2008</NoWarn>
     <DebugType>pdbonly</DebugType>
     <PlatformTarget>x86</PlatformTarget>
@@ -138,4 +138,13 @@
   <Target Name="AfterBuild">
   </Target>
   -->
+  <Target Name="DebugFilesFilesOutputGroupCustom" BeforeTargets="AssignTargetPaths" Condition="'@(_ReferenceRelatedPaths)' != ''" DependsOnTargets="ResolveReferences">
+    <!-- This item represents dependent pdb file's -->
+    <ItemGroup>
+      <Content Include="@(_ReferenceRelatedPaths->'%(FullPath)')" Condition="'%(Extension)' == '.pdb'">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        <Visible>False</Visible>
+      </Content>
+    </ItemGroup>
+  </Target>
 </Project>
