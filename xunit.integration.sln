@@ -57,6 +57,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Current", "Current", "{687D
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Devices.UWP.OnlyPCL", "Devices.UWP.OnlyPCL\Devices.UWP.OnlyPCL.csproj", "{F54A9F65-4811-4CE4-9BC3-76DFA8795AF5}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Build", "Build", "{7E5A7A5E-3B1C-4D00-97E0-9B79F572ACE7}"
+	ProjectSection(SolutionItems) = preProject
+		global.json = global.json
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Ad-Hoc|Any CPU = Ad-Hoc|Any CPU
