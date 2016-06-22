@@ -5,16 +5,16 @@
         "copyToOutput": [ "xunit.runner.json" ]
     },
     "dependencies": {
-        "dotnet-test-xunit": "1.0.0-rc2-build10025",
+        "dotnet-test-xunit": "1.0.0-rc3-build10027",
         "Microsoft.NETCore.App": {
             "type": "platform",
             "version": "1.0.0-rc2-3002702"
         },
-        "xunit": "2.2.0-beta2-build3297"
+        "xunit": "2.2.0-beta2-build3298"
     },
     "frameworks": {
         "netcoreapp1.0": {
-            // Should be able to dump the imports once dotnet-test-xunit is updated
+            // Should be able to dump the imports once .NET tooling gets proper packages
             "imports": [
                 "dnxcore50",
                 "portable-net45+win8"
