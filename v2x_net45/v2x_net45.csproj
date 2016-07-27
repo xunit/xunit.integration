@@ -58,6 +58,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AbstractTestClass.cs" />
     <Compile Include="BasicTests.cs" />
     <Compile Include="DeserializationFailureTests.cs" />
     <Compile Include="FixtureFailureTests.cs" />
