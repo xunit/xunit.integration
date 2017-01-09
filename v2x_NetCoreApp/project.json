@@ -10,7 +10,7 @@
         "type": "platform",
         "version": "1.0.1"
       },
-        "xunit": "2.2.0-beta5-build3469"
+        "xunit": "2.2.0-beta5-build3470"
     },
     "frameworks": {
         "netcoreapp1.0": {}
