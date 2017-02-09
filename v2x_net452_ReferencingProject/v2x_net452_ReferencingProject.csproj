@@ -7,8 +7,8 @@
     <ProjectGuid>{B15AFC6F-D6DA-4F24-B120-0757651C68D4}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>v2x_net45_referencingproject</RootNamespace>
-    <AssemblyName>v2x_net45_referencingproject</AssemblyName>
+    <RootNamespace>v2x_net452_ReferencingProject</RootNamespace>
+    <AssemblyName>v2x_net452_ReferencingProject</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -44,7 +44,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\v2x_net45\v2x_net45.csproj">
+    <ProjectReference Include="..\v2x_net452\v2x_net452.csproj">
       <Project>{06d874bc-29fe-4b68-aa7f-b4654aa4520a}</Project>
       <Name>v2x_net45</Name>
     </ProjectReference>

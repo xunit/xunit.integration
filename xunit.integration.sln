@@ -5,7 +5,7 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 14.0.23107.0
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "v1_net20", "v1_net20\v1_net20.csproj", "{AA40B46D-EB27-43F5-8CA4-EC5758959BC7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "v2x_net45", "v2x_net45\v2x_net45.csproj", "{06D874BC-29FE-4B68-AA7F-B4654AA4520A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "v2x_net452", "v2x_net452\v2x_net452.csproj", "{06D874BC-29FE-4B68-AA7F-B4654AA4520A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "v2x_PCL", "v2x_PCL\v2x_PCL.csproj", "{9A5D4C6B-5B84-411E-998C-4EDBA6C78FAD}"
 EndProject
@@ -15,7 +15,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "v1_net45", "v1_net45\v1_net
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NUnit_and_v2x", "NUnit_and_v2x\NUnit_and_v2x.csproj", "{16463F1B-8D23-4F9F-8C1B-77D5288C4E1C}"
 EndProject
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "v2x_net45_FSharp", "v2x_net45_FSharp\v2x_net45_FSharp.fsproj", "{656EF85A-A205-426F-8B79-2969DC118BE2}"
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "v2x_net452_FSharp", "v2x_net452_FSharp\v2x_net452_FSharp.fsproj", "{656EF85A-A205-426F-8B79-2969DC118BE2}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "v2x_UWP", "v2x_UWP\v2x_UWP.csproj", "{4C3C1504-E4AD-435A-B9F8-0AF6400F2A99}"
 EndProject
@@ -52,9 +52,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.1", "2.1", "{41070331-4C7
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "v21_UWP", "v21_UWP\v21_UWP.csproj", "{B395D733-D3E3-404F-B978-3429E4E1E603}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "v2x_NetCoreApp", "v2x_NetCoreApp\v2x_NetCoreApp.xproj", "{24DACD61-CDB4-4EDA-9D9F-9D2184D66A00}"
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "v2x_netcoreapp1.0", "v2x_netcoreapp1.0\v2x_netcoreapp1.0.xproj", "{24DACD61-CDB4-4EDA-9D9F-9D2184D66A00}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "v2x_net45_referencingproject", "v2x_net45_referencingproject\v2x_net45_referencingproject.csproj", "{B15AFC6F-D6DA-4F24-B120-0757651C68D4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "v2x_net452_ReferencingProject", "v2x_net452_ReferencingProject\v2x_net452_ReferencingProject.csproj", "{B15AFC6F-D6DA-4F24-B120-0757651C68D4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

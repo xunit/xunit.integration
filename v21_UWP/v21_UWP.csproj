@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
-    <ProjectGuid>{b395d733-d3e3-404f-b978-3429e4e1e603}</ProjectGuid>
+    <ProjectGuid>{B395D733-D3E3-404F-B978-3429E4E1E603}</ProjectGuid>
     <OutputType>AppContainerExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>v21_UWP</RootNamespace>
@@ -19,7 +19,7 @@
     <PackageCertificateKeyFile>v21_UWP_TemporaryKey.pfx</PackageCertificateKeyFile>
     <UnitTestPlatformVersion Condition="'$(UnitTestPlatformVersion)' == ''">14.0</UnitTestPlatformVersion>
     <EnableDotNetNativeCompatibleProfile>true</EnableDotNetNativeCompatibleProfile>
-    <PackageCertificateThumbprint>7B87D23E2802DC8AE9A9AF09E4CE6C1B083DEEDC</PackageCertificateThumbprint>
+    <PackageCertificateThumbprint>3068D1A1D950BE91E48C4893362047A5D634E47E</PackageCertificateThumbprint>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|ARM'">
     <DebugSymbols>true</DebugSymbols>
