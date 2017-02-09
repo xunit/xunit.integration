@@ -46,7 +46,7 @@
   <ItemGroup>
     <ProjectReference Include="..\v2x_net452\v2x_net452.csproj">
       <Project>{06d874bc-29fe-4b68-aa7f-b4654aa4520a}</Project>
-      <Name>v2x_net45</Name>
+      <Name>v2x_net452</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
