@@ -15,6 +15,15 @@ public class BasicTests
         Assert.True(false);
     }
 
+    [Theory]
+    [InlineData(2112)]
+    [InlineData("hello")]
+    [InlineData(null)]
+    public void Theory(object value)
+    {
+        Assert.NotNull(value);
+    }
+
     [Fact]
     public async void FailingAsyncVoidTest()
     {
