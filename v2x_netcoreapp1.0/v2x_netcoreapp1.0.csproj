@@ -12,8 +12,8 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.0.0" />
-    <PackageReference Include="xunit" Version="2.3.0-beta1-build3633" />
-    <PackageReference Include="xunit.runner.visualstudio" Version="2.3.0-beta1-build1305" />
+    <PackageReference Include="xunit" Version="2.3.0-beta1-build3637" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.3.0-beta1-build1306" />
   </ItemGroup>
 
   <ItemGroup>
