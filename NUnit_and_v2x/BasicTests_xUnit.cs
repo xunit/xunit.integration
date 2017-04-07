@@ -16,7 +16,7 @@ public class BasicTests_xUnit
 
     [Theory]
     [InlineData(2112)]
-    [InlineData("hello")]
+    [InlineData("hello from NUnit_and_v2x")]
     [InlineData(null)]
     public void Theory(object value)
     {

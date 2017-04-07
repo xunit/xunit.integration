@@ -17,7 +17,7 @@ public class BasicTests
 
     [Theory]
     [InlineData(2112)]
-    [InlineData("hello")]
+    [InlineData("hello from v21_net45")]
     [InlineData(null)]
     public void Theory(object value)
     {

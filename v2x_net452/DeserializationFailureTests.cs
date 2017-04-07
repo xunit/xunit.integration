@@ -15,7 +15,7 @@ public class DeserializationFailureTests
     public static TheoryData<BadTheoryItem> BadTheoryData = new TheoryData<BadTheoryItem> { new BadTheoryItem(42) };
 }
 
-[XunitTestCaseDiscoverer("CustomFactDiscoverer", "v2x_net45")]
+[XunitTestCaseDiscoverer("CustomFactDiscoverer", "v2x_net452")]
 class CustomFactAttribute : FactAttribute { }
 
 class CustomFactDiscoverer : IXunitTestCaseDiscoverer

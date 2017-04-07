@@ -17,7 +17,7 @@ public class BasicTests
 
     [Theory]
     [InlineData(2112)]
-    [InlineData("hello")]
+    [InlineData("hello from v2x_UWP")]
     [InlineData(null)]
     public void Theory(object value)
     {

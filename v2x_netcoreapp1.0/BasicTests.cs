@@ -16,7 +16,7 @@ public class BasicTests
 
     [Theory]
     [InlineData(2112)]
-    [InlineData("hello")]
+    [InlineData("hello from v2x_netcoreapp1.0")]
     [InlineData(null)]
     public void Theory(object value)
     {
