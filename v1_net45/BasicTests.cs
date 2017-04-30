@@ -1,4 +1,5 @@
-﻿using Xunit;
+﻿using System.Threading.Tasks;
+using Xunit;
 using Xunit.Extensions;
 
 public class BasicTests
@@ -22,5 +23,12 @@ public class BasicTests
     public void Theory(object value)
     {
         Assert.NotNull(value);
+    }
+
+    [Fact]
+    public async Task FailingAsyncTaskTest()
+    {
+        await Task.Delay(0);
+        Assert.True(false);
     }
 }
