@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest" xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10" IgnorableNamespaces="uap mp">
-  <Identity Name="1255bb93-8d7c-4e0f-b1e4-4187b164ac29" Publisher="CN=xUnit.net" Version="1.0.0.0" />
+  <Identity Name="1255bb93-8d7c-4e0f-b1e4-4187b164ac29" Publisher="CN=xunit.integration" Version="1.0.0.0" />
   <mp:PhoneIdentity PhoneProductId="19a703e0-a47d-4b11-b31e-fa6b6b227b2b" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
     <DisplayName>v21_UWP</DisplayName>
