@@ -5,8 +5,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="xunit" Version="2.3.0-beta2-build3680" />
-    <PackageReference Include="xunit.runner.msbuild" Version="2.3.0-beta2-build3680" />
+    <PackageReference Include="xunit" Version="2.3.0-beta3-build3687" />
+    <PackageReference Include="xunit.runner.msbuild" Version="2.3.0-beta3-build3687" />
   </ItemGroup>
 
   <Target Name="Test" DependsOnTargets="Build">
