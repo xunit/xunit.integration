@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net452</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="xunit" Version="2.3.0-beta3-build3687" />
+    <PackageReference Include="xunit.runner.console" Version="2.3.0-beta3-build3687" />
+  </ItemGroup>
+
+  <Target Name="Test" AfterTargets="Build">
+    <Exec Command="$(XunitConsolePath) &quot;$(TargetPath)&quot;" />
+  </Target>
+
+</Project>
