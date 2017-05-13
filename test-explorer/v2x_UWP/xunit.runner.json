@@ -1,5 +1,6 @@
 ﻿{
     "diagnosticMessages": true,
+    "internalDiagnosticMessages": true,
     "methodDisplay": "classAndMethod",
     "parallelizeAssembly": true
 }
