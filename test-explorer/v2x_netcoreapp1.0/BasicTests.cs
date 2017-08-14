@@ -18,8 +18,12 @@ public class BasicTests
     [InlineData(2112)]
     [InlineData("hello from v2x_netcoreapp1.0")]
     [InlineData(null)]
+    [MemberData(nameof(PlatformName))]
     public void Theory(object value)
     {
         Assert.NotNull(value);
     }
+
+    public static TheoryData<string> PlatformName
+        => new TheoryData<string> { System.Runtime.InteropServices.RuntimeInformation.FrameworkDescription };
 }

@@ -16,7 +16,7 @@ public class BasicTests
 
     [Theory]
     [InlineData(2112)]
-    [InlineData("hello from v2x_netcoreapp1.1")]
+    [InlineData("hello from v2x_netcoreapp2.0")]
     [InlineData(null)]
     [MemberData(nameof(PlatformName))]
     public void Theory(object value)

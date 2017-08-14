@@ -13,7 +13,7 @@ public class TestClass
     }
 
     [Theory]
-    [MemberData("GetData", new int[] { 4, 5, 7 }, new int[] { 8, 10, 12 })]
+    [MemberData(nameof(GetData), new int[] { 4, 5, 7 }, new int[] { 8, 10, 12 })]
     public void RunTest(int data1, int data2)
     {
         Assert.Equal(data1 * 2, data2);
@@ -44,11 +44,17 @@ public class BasicTests
     }
 
     [Fact]
+#pragma warning disable xUnit1001
     public void InvalidFact(object x) { }  // Facts can't have parameters
+#pragma warning restore xUnit1001
 
     [Theory]
+#pragma warning disable xUnit1011
     [InlineData(42, "Hello World", 21.12)]  // Too much data
+#pragma warning restore xUnit1011
+#pragma warning disable xUnit1009
     [InlineData(2600)]                      // Not enough data
+#pragma warning restore xUnit1009
     public void InvalidTheory(int x, string y) { }
 
     [Fact]
