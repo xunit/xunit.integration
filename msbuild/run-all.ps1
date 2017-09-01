@@ -1,4 +1,4 @@
-$nugetVersion = "4.1.0"
+$nugetVersion = "4.3.0"
 $nugetExe = [System.IO.Path]::Combine($home, ".nuget", "cli", $nugetVersion, "nuget.exe")
 
 function _download_nuget() {
@@ -8,7 +8,7 @@ function _download_nuget() {
     }
 
     if ((test-path $nugetExe) -eq $false) {
-        _build_step ("Downloading NuGet version " + $nugetVersion)
+        write-host ("Downloading NuGet version " + $nugetVersion) -ForegroundColor White
             Invoke-WebRequest ("https://dist.nuget.org/win-x86-commandline/v" + $nugetVersion + "/nuget.exe") -OutFile $nugetExe
     }
 }
