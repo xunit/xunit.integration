@@ -55,7 +55,9 @@ public class BasicTests
 #pragma warning disable xUnit1009
     [InlineData(2600)]                      // Not enough data
 #pragma warning restore xUnit1009
+#pragma warning disable xUnit1026           // Unused parameters
     public void InvalidTheory(int x, string y) { }
+#pragma warning restore xUnit1026
 
     [Fact]
     public async void FailingAsyncVoidTest()
