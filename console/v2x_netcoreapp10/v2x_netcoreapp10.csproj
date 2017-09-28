@@ -1,7 +1,7 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net452</TargetFramework>
+    <TargetFramework>netcoreapp1.0</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup>
@@ -10,7 +10,7 @@
   </ItemGroup>
 
   <Target Name="Test" AfterTargets="Build">
-    <Exec Command="$(XunitConsolePath) &quot;$(TargetPath)&quot;" />
+    <Exec Command="dotnet &quot;$(XunitConsoleNetCoreAppPath)&quot; &quot;$(TargetPath)&quot;" />
   </Target>
 
 </Project>
