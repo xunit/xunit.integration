@@ -10,7 +10,9 @@ public class DeserializationFailureTests
 
     [Theory]
     [MemberData(nameof(BadTheoryData))]
+#pragma warning disable xUnit1026  // Don't need to use the bad data
     public void TheoryDataSerializerIsBroken(BadTheoryItem item) { }
+#pragma warning restore xUnit1026
 
     public static TheoryData<BadTheoryItem> BadTheoryData = new TheoryData<BadTheoryItem> { new BadTheoryItem(42) };
 }
