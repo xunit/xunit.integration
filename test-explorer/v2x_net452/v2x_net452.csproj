@@ -32,8 +32,8 @@
     <CodeAnalysisRuleSet>v2x_net452.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="xunit" Version="2.3.0" />
-    <PackageReference Include="xunit.runner.visualstudio" Version="2.3.0" />
+    <PackageReference Include="xunit" Version="2.3.1" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.3.1" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -50,6 +50,7 @@
     <Compile Include="DeserializationFailureTests.cs" />
     <Compile Include="DuplicateUniqueIDs.cs" />
     <Compile Include="FixtureFailureTests.cs" />
+    <Compile Include="FixtureWithMixedFactAndTheory.cs" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
