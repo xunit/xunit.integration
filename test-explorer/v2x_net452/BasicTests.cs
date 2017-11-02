@@ -1,4 +1,8 @@
-﻿using System.Collections.Generic;
+﻿#pragma warning disable xUnit1001
+#pragma warning disable xUnit1009
+#pragma warning disable xUnit1011
+
+using System.Collections.Generic;
 using System.Threading.Tasks;
 using Xunit;
 
@@ -44,20 +48,12 @@ public class BasicTests
     }
 
     [Fact]
-#pragma warning disable xUnit1001
     public void InvalidFact(object x) { }  // Facts can't have parameters
-#pragma warning restore xUnit1001
 
     [Theory]
-#pragma warning disable xUnit1011
     [InlineData(42, "Hello World", 21.12)]  // Too much data
-#pragma warning restore xUnit1011
-#pragma warning disable xUnit1009
     [InlineData(2600)]                      // Not enough data
-#pragma warning restore xUnit1009
-#pragma warning disable xUnit1026           // Unused parameters
     public void InvalidTheory(int x, string y) { }
-#pragma warning restore xUnit1026
 
     [Fact]
     public async void FailingAsyncVoidTest()
