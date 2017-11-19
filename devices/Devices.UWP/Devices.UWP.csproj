@@ -18,6 +18,7 @@
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{A5A43C5B-DE2A-4C0C-9213-0A381AF9435A};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <PackageCertificateKeyFile>Devices.UWP_TemporaryKey.pfx</PackageCertificateKeyFile>
+    <PackageCertificateThumbprint>8B2F11954F68FB8B9B1D727A5D82BE6AE2347CB4</PackageCertificateThumbprint>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|ARM'">
     <DebugSymbols>true</DebugSymbols>
@@ -89,10 +90,6 @@
     <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
   </PropertyGroup>
   <ItemGroup>
-    <!-- A reference to the entire .Net Framework and Windows SDK are automatically included -->
-    <None Include="project.json" />
-  </ItemGroup>
-  <ItemGroup>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
@@ -122,9 +119,13 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\v2x_PCL\v2x_PCL.csproj">
-      <Project>{9a5d4c6b-5b84-411e-998c-4edba6c78fad}</Project>
-      <Name>v2x_PCL</Name>
+    <PackageReference Include="xunit.runner.devices" Version="2.3.2" />
+    <PackageReference Include="xunit" Version="2.3.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\v2x_NetStandard\v2x_NetStandard.csproj">
+      <Project>{2fa8ec2d-589b-4b4c-97b2-1628bc854c43}</Project>
+      <Name>v2x_NetStandard</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
@@ -139,7 +140,6 @@
   </Target>
   -->
   <Target Name="DebugFilesFilesOutputGroupCustom" BeforeTargets="AssignTargetPaths" Condition="'@(_ReferenceRelatedPaths)' != ''" DependsOnTargets="ResolveReferences">
-     
     <ItemGroup>
       <Content Include="@(_ReferenceRelatedPaths->'%(FullPath)')" Condition="'%(Extension)' == '.pdb'">
         <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
