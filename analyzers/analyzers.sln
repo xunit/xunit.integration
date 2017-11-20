@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CoreExtensibility", "CoreEx
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExecutionExtensibility", "ExecutionExtensibility\ExecutionExtensibility.csproj", "{224BC22A-E272-4A64-86B4-B439B98E79C1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FullXunit", "FullXunit\FullXunit.csproj", "{2FDBD2A5-8EB3-4CC3-922F-78F96F68B636}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{224BC22A-E272-4A64-86B4-B439B98E79C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{224BC22A-E272-4A64-86B4-B439B98E79C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{224BC22A-E272-4A64-86B4-B439B98E79C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2FDBD2A5-8EB3-4CC3-922F-78F96F68B636}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2FDBD2A5-8EB3-4CC3-922F-78F96F68B636}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2FDBD2A5-8EB3-4CC3-922F-78F96F68B636}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2FDBD2A5-8EB3-4CC3-922F-78F96F68B636}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
