@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <NoWarn>$(NoWarn);IDE1006</NoWarn>
+    <TargetFrameworks>net452;netcoreapp1.0;netcoreapp2.0</TargetFrameworks>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="xunit.analyzers" Version="0.8.0-build1149" />
+    <PackageReference Include="xunit.extensibility.core" Version="2.4.0-beta1-build3881" />
+  </ItemGroup>
+
+</Project>
