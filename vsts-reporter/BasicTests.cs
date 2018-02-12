@@ -8,6 +8,13 @@ public class BasicTests
         Assert.True(true);
     }
 
+    [Fact]
+    public void Failing()
+    {
+        Assert.False(true);
+    }
+
+
     [Theory]
     [InlineData(2112)]
     [InlineData("hello from vsts-reporter")]
