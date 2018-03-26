@@ -19,7 +19,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "v1_net45", "v1_net45\v1_net
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NUnit_and_v2x", "NUnit_and_v2x\NUnit_and_v2x.csproj", "{16463F1B-8D23-4F9F-8C1B-77D5288C4E1C}"
 EndProject
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "v2x_net452_FSharp", "v2x_net452_FSharp\v2x_net452_FSharp.fsproj", "{656EF85A-A205-426F-8B79-2969DC118BE2}"
+Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "v2x_net452_FSharp", "v2x_net452_FSharp\v2x_net452_FSharp.fsproj", "{656EF85A-A205-426F-8B79-2969DC118BE2}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "v2x_UWP", "v2x_UWP\v2x_UWP.csproj", "{4C3C1504-E4AD-435A-B9F8-0AF6400F2A99}"
 EndProject

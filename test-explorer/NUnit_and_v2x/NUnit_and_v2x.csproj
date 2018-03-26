@@ -32,8 +32,8 @@
   <ItemGroup>
     <PackageReference Include="NUnit" Version="2.6.4" />
     <PackageReference Include="NUnitTestAdapter" Version="1.2" />
-    <PackageReference Include="xunit" Version="2.3.1" />
-    <PackageReference Include="xunit.runner.visualstudio" Version="2.3.1" />
+    <PackageReference Include="xunit" Version="2.4.0-beta.2.build3981" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.4.0-beta.2.build3981" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
