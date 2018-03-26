@@ -37,6 +37,11 @@ class CustomFactDiscoverer : IXunitTestCaseDiscoverer
 
 class CustomTestCase : XunitTestCase
 {
+    // To make xUnit 3001 go away until fixed
+    public CustomTestCase()
+    {
+
+    }
     // Configuration problem: failed to provide an empty constructor
 
     public CustomTestCase(IMessageSink diagnosticMessageSink, TestMethodDisplay defaultMethodDisplay, ITestMethod testMethod, object[] testMethodArguments = null)
@@ -46,6 +51,11 @@ class CustomTestCase : XunitTestCase
 
 public class BadTheoryItem : IXunitSerializable
 {
+    // To make xUnit 3001 go away until fixed
+    public BadTheoryItem()
+    {
+
+    }
     // Configuration problem: failed to provide an empty constructor
 
     public BadTheoryItem(int value)
