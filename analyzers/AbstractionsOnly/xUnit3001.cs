@@ -7,9 +7,14 @@ using Xunit.Abstractions;
 
 public class xUnit3001 : ITestCase
 {
-    public string DisplayName => throw new NotImplementedException();
+    // Need at least one ctor so the auto-generated ctor doesn't satisfy the rule
+    public xUnit3001(int unused) { }
 
-    public string SkipReason => throw new NotImplementedException();
+    public string DisplayName
+        => throw new NotImplementedException();
+
+    public string SkipReason
+        => throw new NotImplementedException();
 
     public ISourceInformation SourceInformation
     {
@@ -17,15 +22,21 @@ public class xUnit3001 : ITestCase
         set => throw new NotImplementedException();
     }
 
-    public ITestMethod TestMethod => throw new NotImplementedException();
+    public ITestMethod TestMethod
+        => throw new NotImplementedException();
 
-    public object[] TestMethodArguments => throw new NotImplementedException();
+    public object[] TestMethodArguments
+        => throw new NotImplementedException();
 
-    public Dictionary<string, List<string>> Traits => throw new NotImplementedException();
+    public Dictionary<string, List<string>> Traits
+        => throw new NotImplementedException();
 
-    public string UniqueID => throw new NotImplementedException();
+    public string UniqueID
+        => throw new NotImplementedException();
 
-    public void Deserialize(IXunitSerializationInfo info) => throw new NotImplementedException();
+    public void Deserialize(IXunitSerializationInfo info)
+        => throw new NotImplementedException();
 
-    public void Serialize(IXunitSerializationInfo info) => throw new NotImplementedException();
+    public void Serialize(IXunitSerializationInfo info)
+        => throw new NotImplementedException();
 }

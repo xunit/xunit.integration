@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using Xunit;
 using Xunit.Abstractions;
 using Xunit.Sdk;
@@ -31,21 +32,20 @@ class CustomFactDiscoverer : IXunitTestCaseDiscoverer
 
     public IEnumerable<IXunitTestCase> Discover(ITestFrameworkDiscoveryOptions discoveryOptions, ITestMethod testMethod, IAttributeInfo factAttribute)
     {
-        yield return new CustomTestCase(diagnosticMessageSink, discoveryOptions.MethodDisplayOrDefault(), testMethod);
+        yield return new CustomTestCase(diagnosticMessageSink, discoveryOptions.MethodDisplayOrDefault(), discoveryOptions.MethodDisplayOptionsOrDefault(), testMethod);
     }
 }
 
 class CustomTestCase : XunitTestCase
 {
     // To make xUnit 3001 go away until fixed
-    public CustomTestCase()
-    {
+    [Obsolete]
+    public CustomTestCase() { }
 
-    }
     // Configuration problem: failed to provide an empty constructor
 
-    public CustomTestCase(IMessageSink diagnosticMessageSink, TestMethodDisplay defaultMethodDisplay, ITestMethod testMethod, object[] testMethodArguments = null)
-        : base(diagnosticMessageSink, defaultMethodDisplay, testMethod, testMethodArguments)
+    public CustomTestCase(IMessageSink diagnosticMessageSink, TestMethodDisplay defaultMethodDisplay, TestMethodDisplayOptions defaultMethodDisplayOptions, ITestMethod testMethod, object[] testMethodArguments = null)
+        : base(diagnosticMessageSink, defaultMethodDisplay, defaultMethodDisplayOptions, testMethod, testMethodArguments)
     { }
 }
 

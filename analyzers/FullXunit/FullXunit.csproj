@@ -6,8 +6,10 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="xunit.analyzers" Version="0.8.0-build1149" />
-    <PackageReference Include="xunit.core" Version="2.4.0-beta1-build3881" />
+    <PackageReference Include="xunit.analyzers" Version="0.10.0-build1210" />
+    <PackageReference Include="xunit.core" Version="2.4.0-beta.2.build4009" />
+    <PackageReference Include="xunit.extensibility.core" Version="2.4.0-beta.2.build4009" />
+    <PackageReference Include="xunit.extensibility.execution" Version="2.4.0-beta.2.build4009" />
   </ItemGroup>
 
 </Project>

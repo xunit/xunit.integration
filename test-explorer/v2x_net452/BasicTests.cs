@@ -1,6 +1,7 @@
 ﻿#pragma warning disable xUnit1001
 #pragma warning disable xUnit1009
 #pragma warning disable xUnit1011
+#pragma warning disable xUnit1026
 
 using System.Collections.Generic;
 using System.Threading.Tasks;
