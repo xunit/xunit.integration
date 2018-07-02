@@ -136,10 +136,10 @@
       <Version>6.1.4</Version>
     </PackageReference>
     <PackageReference Include="xunit">
-      <Version>2.4.0-beta.2.build4009</Version>
+      <Version>2.4.0-rc.1.build4038</Version>
     </PackageReference>
     <PackageReference Include="xunit.runner.visualstudio">
-      <Version>2.4.0-beta.2.build4009</Version>
+      <Version>2.4.0-rc.1.build4038</Version>
     </PackageReference>
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">

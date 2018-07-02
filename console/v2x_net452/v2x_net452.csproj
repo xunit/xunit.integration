@@ -29,8 +29,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="xunit" Version="2.4.0-beta.2.build4009" />
-    <PackageReference Include="xunit.runner.console" Version="2.4.0-beta.2.build4009" />
+    <PackageReference Include="xunit" Version="2.4.0-rc.1.build4038" />
+    <PackageReference Include="xunit.runner.console" Version="2.4.0-rc.1.build4038" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -48,6 +48,11 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="xunit.runner.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="Test" AfterTargets="Build">

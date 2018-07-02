@@ -35,8 +35,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="xunit" Version="2.4.0-beta.2.build4009" />
-    <PackageReference Include="xunit.runner.visualstudio" Version="2.4.0-beta.2.build4009" />
+    <PackageReference Include="xunit" Version="2.4.0-rc.1.build4038" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.4.0-rc.1.build4038" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -61,9 +61,9 @@
     <Folder Include="Properties\" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="xunit.runner.json">
+    <Content Include="xunit.runner.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
+    </Content>
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">

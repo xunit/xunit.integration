@@ -14,5 +14,6 @@ type BasicTests() =
     [<Theory>]
     [<InlineData("hello from v2x_net452_FSharp")>]
     [<InlineData("")>]
+    [<InlineData(null)>]
     member x.Theory(value:string) =
         Assert.NotEmpty value

@@ -1,6 +1,4 @@
-﻿{
-    "diagnosticMessages": true,
-    "internalDiagnosticMessages": true,
-    "methodDisplay": "classAndMethod",
-    "parallelizeAssembly": true
+{
+  "diagnosticMessages": true,
+  "internalDiagnosticMessages": true
 }
