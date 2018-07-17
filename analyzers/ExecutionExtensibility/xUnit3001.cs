@@ -35,6 +35,9 @@ public class xUnit3001 : LongLivedMarshalByRefObject, IXunitTestCase
     public object[] TestMethodArguments
         => throw new NotImplementedException();
 
+    public int Timeout
+        => throw new NotImplementedException();
+
     public Dictionary<string, List<string>> Traits
         => throw new NotImplementedException();
 

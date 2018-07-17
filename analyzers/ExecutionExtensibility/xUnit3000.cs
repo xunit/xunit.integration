@@ -39,6 +39,9 @@ public class xUnit3000 : IXunitTestCase
     public object[] TestMethodArguments
         => throw new NotImplementedException();
 
+    public int Timeout
+        => throw new NotImplementedException();
+
     public Dictionary<string, List<string>> Traits
         => throw new NotImplementedException();
 
