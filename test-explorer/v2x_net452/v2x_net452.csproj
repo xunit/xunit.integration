@@ -32,8 +32,11 @@
     <CodeAnalysisRuleSet>v2x_net452.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="xunit" Version="2.4.0" />
-    <PackageReference Include="xunit.runner.visualstudio" Version="2.4.0" />
+    <PackageReference Include="xunit" Version="2.4.1-pre.build.4059" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.4.1-pre.build.4059">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
