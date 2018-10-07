@@ -31,8 +31,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="xunit" Version="2.4.1-pre.build.4064" />
-    <PackageReference Include="xunit.runner.msbuild" Version="2.4.1-pre.build.4064">
+    <PackageReference Include="xunit" Version="2.4.1-pre.build.4071" />
+    <PackageReference Include="xunit.runner.msbuild" Version="2.4.1-pre.build.4071">
       <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
