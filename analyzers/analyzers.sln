@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27004.2009
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31710.8
 MinimumVisualStudioVersion = 15.0.26124.0
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AbstractionsOnly", "AbstractionsOnly\AbstractionsOnly.csproj", "{5C705559-DCE1-41B4-939F-C8F826C816AE}"
 EndProject
@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CoreExtensibility", "CoreEx
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExecutionExtensibility", "ExecutionExtensibility\ExecutionExtensibility.csproj", "{224BC22A-E272-4A64-86B4-B439B98E79C1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FullXunit", "FullXunit\FullXunit.csproj", "{2FDBD2A5-8EB3-4CC3-922F-78F96F68B636}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FullXunit", "FullXunit\FullXunit.csproj", "{2FDBD2A5-8EB3-4CC3-922F-78F96F68B636}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

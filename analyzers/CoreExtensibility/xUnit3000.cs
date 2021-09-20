@@ -2,9 +2,12 @@
 using System.Collections.Generic;
 using Xunit.Abstractions;
 
-// This version can be auto-fixed since we have the xunit.execution.* reference
-public class xUnit3000 : Xunit.LongLivedMarshalByRefObject, ITestCase
+// This version cannot be auto-fixed without an xunit.execution.* reference
+public class xUnit3000 : ITestCase
 {
+    [Obsolete("Called by the de-serializer; should only be called by deriving classes for de-serialization purposes")]
+    public xUnit3000() { }
+
     public string DisplayName =>
         throw new NotImplementedException();
 
