@@ -16,7 +16,7 @@ public class BasicTests
 
     [Theory]
     [InlineData(2112)]
-    [InlineData("hello from v2x_netcoreapp2.1")]
+    [InlineData("hello from v2x_net6.0")]
     [InlineData(null)]
     [MemberData(nameof(PlatformName))]
     public void Theory(object value)
@@ -25,5 +25,5 @@ public class BasicTests
     }
 
     public static TheoryData<string> PlatformName
-        => new TheoryData<string> { System.Runtime.InteropServices.RuntimeInformation.FrameworkDescription };
+        => new() { System.Runtime.InteropServices.RuntimeInformation.FrameworkDescription };
 }

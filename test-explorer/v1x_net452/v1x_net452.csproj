@@ -6,9 +6,9 @@
     <ProjectGuid>{C4F10DDA-5A29-40FA-B4B3-FEBAC9372989}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>v1_net45</RootNamespace>
-    <AssemblyName>v1_net45</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <RootNamespace>v1_net452</RootNamespace>
+    <AssemblyName>v1_net452</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
