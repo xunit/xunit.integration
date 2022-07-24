@@ -9,5 +9,6 @@ public class xUnit2013
         var result = new[] { "Hello" };
 
         Assert.Equal(1, result.Count());
+        Assert.Equal(1, result.Length);
     }
 }

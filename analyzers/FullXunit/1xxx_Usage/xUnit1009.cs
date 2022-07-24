@@ -6,5 +6,5 @@ public class xUnit1009
 {
     [Theory]
     [InlineData("Hello world")]
-    public void TestMethod(string greeting, int age = 42) { }
+    public void TestMethod(string greeting, int age) { }
 }

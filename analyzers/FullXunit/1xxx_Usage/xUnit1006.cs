@@ -6,6 +6,6 @@ public class xUnit1006
 {
     [Theory]
     [InlineData(12, "book")]
-    public void TestMethod(int quantity, string productType)
+    public void TestMethod()
     { }
 }

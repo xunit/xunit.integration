@@ -16,4 +16,4 @@ type BasicTests() =
     [<InlineData("")>]
     [<InlineData(null)>]
     member x.Theory(value:string) =
-        Assert.NotEmpty value
+        Assert.NotNull value
