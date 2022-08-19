@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <LangVersion>10.0</LangVersion>
+    <Nullable>enable</Nullable>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net472</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="xunit.v3" Version="0.1.1-pre.85" />
+  </ItemGroup>
+
+  <Target Name="Test" AfterTargets="Build">
+    <Exec Command="&quot;$(MSBuildThisFileDirectory)$(OutputPath)$(AssemblyName).exe&quot;" />
+  </Target>
+
+</Project>
