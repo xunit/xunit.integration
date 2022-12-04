@@ -2,7 +2,7 @@
 
 public class xUnit1005
 {
-    [Fact]
-    public void TestMethod(int _)
+    [Fact, InlineData(1)]
+    public void TestMethod()
     { }
 }
