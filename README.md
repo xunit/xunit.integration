@@ -1,6 +1,10 @@
 ## About This Project
 
-This project contains integration tests for [https://github.com/xunit/devices.xunit](https://github.com/xunit/devices.xunit) and [https://github.com/xunit/visualstudio.xunit](https://github.com/xunit/visualstudio.xunit)
+This project contains integration tests for:
+
+- [xunit/xunit](https://github.com/xunit/xunit) in [`console`](console) and [`msbuild`](msbuild)
+- [xunit/xunit.analyzers](https://github.com/xunit/xunit.analyzers) in [`analyzers`](analyzers)
+- [xunit/visualstudio.xunit](https://github.com/xunit/visualstudio.xunit) in [`test-explorer`](test-explorer)
 
 To open an issue for this project, please visit the [core xUnit.net project issue tracker](https://github.com/xunit/xunit/issues).
 
