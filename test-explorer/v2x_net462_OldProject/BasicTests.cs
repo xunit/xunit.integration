@@ -16,14 +16,10 @@ public class BasicTests
 
     [Theory]
     [InlineData(2112)]
-    [InlineData("hello from v2x_netcoreapp3.1")]
+    [InlineData("hello from x2x_net462_OldProject")]
     [InlineData(null)]
-    [MemberData(nameof(PlatformName))]
     public void Theory(object value)
     {
         Assert.NotNull(value);
     }
-
-    public static TheoryData<string> PlatformName
-        => new TheoryData<string> { System.Runtime.InteropServices.RuntimeInformation.FrameworkDescription };
 }

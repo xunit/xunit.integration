@@ -12,7 +12,7 @@ type BasicTests() =
         Assert.True false
 
     [<Theory>]
-    [<InlineData("hello from v2x_net452_FSharp")>]
+    [<InlineData("hello from v2x_net462_FSharp")>]
     [<InlineData("")>]
     [<InlineData(null)>]
     member x.Theory(value:string) =

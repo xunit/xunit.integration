@@ -1,4 +1,4 @@
-﻿#pragma warning disable xUnit1001
+#pragma warning disable xUnit1001
 #pragma warning disable xUnit1009
 #pragma warning disable xUnit1011
 #pragma warning disable xUnit1026
@@ -41,7 +41,7 @@ public class BasicTests
 
     [Theory]
     [InlineData(2112)]
-    [InlineData("hello from v2x_net452")]
+    [InlineData("hello from v2x_net462")]
     [InlineData(null)]
     public void Theory(object value)
     {
