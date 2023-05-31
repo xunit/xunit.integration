@@ -9,7 +9,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="xunit.v3" Version="0.1.1-pre.85" />
+    <PackageReference Include="xunit.v3" Version="0.1.1-pre.227" />
   </ItemGroup>
 
   <Target Name="Test" AfterTargets="Build">
