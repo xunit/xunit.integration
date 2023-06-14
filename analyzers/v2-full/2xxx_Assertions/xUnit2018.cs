@@ -9,5 +9,6 @@ public class xUnit2018
         var result = new object();
 
         Assert.IsType<IDisposable>(result);
+        Assert.IsNotType<IDisposable>(result);
     }
 }
