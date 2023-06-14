@@ -11,7 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="xunit.analyzers" Version="1.2.0-pre.22" />
+    <PackageReference Include="xunit.analyzers" Version="1.2.0-pre.23" />
     <PackageReference Include="xunit.v3" Version="0.1.1-pre.241" />
   </ItemGroup>
 
