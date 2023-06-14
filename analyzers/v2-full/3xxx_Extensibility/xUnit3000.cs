@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using Xunit.Abstractions;
 
-// This version can be auto-fixed since we have an indirect xunit.execution.* reference
+// This can only be auto-fixed in v2-execution or v2-full because it needs the reference to xunit.execution.{platform}
 public class xUnit3000 : ITestCase
 {
     public string DisplayName =>
@@ -29,13 +29,9 @@ public class xUnit3000 : ITestCase
     public string UniqueID =>
         throw new NotImplementedException();
 
-    public void Deserialize(IXunitSerializationInfo info)
-    {
+    public void Deserialize(IXunitSerializationInfo info) =>
         throw new NotImplementedException();
-    }
 
-    public void Serialize(IXunitSerializationInfo info)
-    {
+    public void Serialize(IXunitSerializationInfo info) =>
         throw new NotImplementedException();
-    }
 }

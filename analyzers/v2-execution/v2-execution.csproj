@@ -6,6 +6,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Include="..\v2-full\3xxx_Extensibility\*.cs" LinkBase="3xxx_Extensibility" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="xunit.analyzers" Version="1.2.0-pre.9" />
     <PackageReference Include="xunit.extensibility.execution" Version="2.5.0-pre.22" />
   </ItemGroup>

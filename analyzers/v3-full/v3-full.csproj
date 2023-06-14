@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Nullable Condition=" '$(TargetFramework)' == 'net6.0' ">enable</Nullable>
+    <TargetFrameworks>net472;net6.0</TargetFrameworks>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="..\v2-full\1xxx_Usage\*.cs" LinkBase="1xxx_Usage" />
+    <Compile Include="..\v2-full\2xxx_Assertions\*.cs" LinkBase="2xxx_Assertions" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="xunit.analyzers" Version="1.2.0-pre.9" />
+    <PackageReference Include="xunit.v3" Version="0.1.1-pre.238" />
+  </ItemGroup>
+
+</Project>

@@ -11,6 +11,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "v2-execution", "v2-executio
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "v2-full", "v2-full\v2-full.csproj", "{2FDBD2A5-8EB3-4CC3-922F-78F96F68B636}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "v3-full", "v3-full\v3-full.csproj", "{6EBE9509-9BCD-47A8-B17B-1C24DE0F3FD7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{2FDBD2A5-8EB3-4CC3-922F-78F96F68B636}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2FDBD2A5-8EB3-4CC3-922F-78F96F68B636}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2FDBD2A5-8EB3-4CC3-922F-78F96F68B636}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6EBE9509-9BCD-47A8-B17B-1C24DE0F3FD7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6EBE9509-9BCD-47A8-B17B-1C24DE0F3FD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6EBE9509-9BCD-47A8-B17B-1C24DE0F3FD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6EBE9509-9BCD-47A8-B17B-1C24DE0F3FD7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
