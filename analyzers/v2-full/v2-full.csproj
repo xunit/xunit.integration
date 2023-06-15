@@ -6,8 +6,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="xunit" Version="2.5.0-pre.25" />
-    <PackageReference Include="xunit.analyzers" Version="1.2.0-pre.23" />
+    <PackageReference Include="xunit" Version="$(XunitV2Version)" />
+    <PackageReference Include="xunit.analyzers" Version="$(XunitAnalyzersVersion)" />
   </ItemGroup>
 
 </Project>

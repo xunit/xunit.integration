@@ -9,5 +9,5 @@ public class xUnit1015
 
     [Theory]
     [MemberData("MyTestData")]
-    public void TestMethod(string _, int _) { }
+    public void TestMethod(string _1, int _2) { }
 }
