@@ -6,6 +6,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Include="..\common\1xxx_Usage\*.cs" LinkBase="1xxx_Usage" />
+    <Compile Include="..\common\2xxx_Assertions\*.cs" LinkBase="2xxx_Assertions" />
+    <Compile Include="..\common\3xxx_Extensibility\*.cs" LinkBase="3xxx_Extensibility" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="xunit" Version="$(XunitV2Version)" />
     <PackageReference Include="xunit.analyzers" Version="$(XunitAnalyzersVersion)" />
   </ItemGroup>

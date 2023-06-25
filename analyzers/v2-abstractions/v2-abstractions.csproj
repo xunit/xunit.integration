@@ -6,7 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Include="..\v2-full\3xxx_Extensibility\*.cs" LinkBase="3xxx_Extensibility" />
+    <Compile Include="..\common\3xxx_Extensibility\*.cs" LinkBase="3xxx_Extensibility" />
   </ItemGroup>
 
   <ItemGroup>

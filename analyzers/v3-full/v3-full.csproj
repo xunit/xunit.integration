@@ -6,8 +6,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Include="..\v2-full\1xxx_Usage\*.cs" LinkBase="1xxx_Usage" />
-    <Compile Include="..\v2-full\2xxx_Assertions\*.cs" LinkBase="2xxx_Assertions" />
+    <Compile Include="..\common\1xxx_Usage\*.cs" LinkBase="1xxx_Usage" />
+    <Compile Include="..\common\2xxx_Assertions\*.cs" LinkBase="2xxx_Assertions" />
   </ItemGroup>
 
   <ItemGroup>
