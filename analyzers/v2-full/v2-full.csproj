@@ -1,6 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
+    <DefineConstants>$(DefineConstants);XUNIT_V2</DefineConstants>
     <Nullable Condition=" '$(TargetFramework)' == 'netcoreapp3.1' ">enable</Nullable>
     <TargetFrameworks>net452;netcoreapp3.1</TargetFrameworks>
   </PropertyGroup>

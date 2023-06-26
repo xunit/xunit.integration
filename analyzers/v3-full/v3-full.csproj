@@ -1,6 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
+    <DefineConstants>$(DefineConstants);XUNIT_V3</DefineConstants>
     <Nullable Condition=" '$(TargetFramework)' == 'net6.0' ">enable</Nullable>
     <TargetFrameworks>net472;net6.0</TargetFrameworks>
   </PropertyGroup>
