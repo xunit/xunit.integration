@@ -2,7 +2,8 @@
 
   <PropertyGroup>
     <DefineConstants>$(DefineConstants);XUNIT_V2</DefineConstants>
-    <Nullable Condition=" '$(TargetFramework)' == 'netcoreapp3.1' ">enable</Nullable>
+    <LangVersion>10.0</LangVersion>
+    <Nullable>enable</Nullable>
     <TargetFrameworks>net452;netcoreapp3.1</TargetFrameworks>
   </PropertyGroup>
 
