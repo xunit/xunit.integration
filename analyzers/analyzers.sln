@@ -13,6 +13,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "v2-full", "v2-full\v2-full.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "v3-full", "v3-full\v3-full.csproj", "{6EBE9509-9BCD-47A8-B17B-1C24DE0F3FD7}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Versions", "Versions", "{E9BADC05-3257-4E54-AB86-1B9C63D84C69}"
+	ProjectSection(SolutionItems) = preProject
+		..\Directory.Build.props = ..\Directory.Build.props
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
