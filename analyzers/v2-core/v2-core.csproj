@@ -1,13 +1,15 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <DefineConstants>$(DefineConstants);XUNIT_V2</DefineConstants>
-    <NoWarn>$(NoWarn);IDE1006</NoWarn>
-    <TargetFrameworks>net452;netcoreapp3.1</TargetFrameworks>
+    <DefineConstants>$(DefineConstants);XUNIT_V2;XUNIT_EXTENSIBILITY</DefineConstants>
+    <LangVersion>10.0</LangVersion>
+    <Nullable>enable</Nullable>
+    <TargetFrameworks>net452;net6.0</TargetFrameworks>
   </PropertyGroup>
 
   <ItemGroup>
     <Compile Include="..\common\3xxx_Extensibility\*.cs" LinkBase="3xxx_Extensibility" />
+    <Compile Include="..\v2-full\3xxx_Extensibility\*.cs" LinkBase="3xxx_Extensibility" />
   </ItemGroup>
 
   <ItemGroup>

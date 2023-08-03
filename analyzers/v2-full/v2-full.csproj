@@ -1,10 +1,10 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <DefineConstants>$(DefineConstants);XUNIT_V2</DefineConstants>
+    <DefineConstants>$(DefineConstants);XUNIT_V2;XUNIT_EXTENSIBILITY</DefineConstants>
     <LangVersion>10.0</LangVersion>
     <Nullable>enable</Nullable>
-    <TargetFrameworks>net452;netcoreapp3.1</TargetFrameworks>
+    <TargetFrameworks>net452;net6.0</TargetFrameworks>
   </PropertyGroup>
 
   <ItemGroup>
