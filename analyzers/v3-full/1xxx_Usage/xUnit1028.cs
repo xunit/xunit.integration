@@ -9,10 +9,22 @@ public class xUnit1028
         return 42;
     }
 
+    [Fact]
+    public Task<int> InvalidGenericTaskReturnType()
+    {
+        return Task.FromResult(42);
+    }
+
     // This shouldn't trigger, because v3 supports ValueTask
     [Fact]
-    public ValueTask SupportedTaskReturnType()
+    public ValueTask ValueTaskSupportedInV3()
     {
         return default;
+    }
+
+    [Fact]
+    public ValueTask<int> InvalidGenericValueTaskReturnType()
+    {
+        return new(42);
     }
 }
