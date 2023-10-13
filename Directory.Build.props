@@ -1,10 +1,10 @@
 <Project>
 
   <PropertyGroup>
-    <XunitAnalyzersVersion>1.4.0-pre.9</XunitAnalyzersVersion>
-    <XunitV2Version>2.5.2-pre.6</XunitV2Version>
+    <XunitAnalyzersVersion>1.4.0</XunitAnalyzersVersion>
+    <XunitV2Version>2.5.2</XunitV2Version>
     <XunitV3Version>0.1.1-pre.288</XunitV3Version>
-    <XunitRunnerVSVersion>2.5.2-pre.10</XunitRunnerVSVersion>
+    <XunitRunnerVSVersion>2.5.3</XunitRunnerVSVersion>
   </PropertyGroup>
 
 </Project>
