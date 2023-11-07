@@ -2,16 +2,16 @@ using Xunit;
 
 public class xUnit1038
 {
-    public static TheoryData<int?, string?> FieldData =
+    public static TheoryData<int, string> FieldData =
         new() { { 1, "Hello" }, { 2, "World" } };
 
-    public static TheoryData<int?, string?> PropertyData =>
+    public static TheoryData<int, string> PropertyData =>
         new() { { 1, "Hello" }, { 2, "World" } };
 
-    public static TheoryData<int?, string?> MethodDataNoArgs() =>
+    public static TheoryData<int, string> MethodDataNoArgs() =>
         new() { { 1, "Hello" }, { 2, "World" } };
 
-    public static TheoryData<int?, string?> MethodDataWithArgs(int _) =>
+    public static TheoryData<int, string> MethodDataWithArgs(int _) =>
         new() { { 1, "Hello" }, { 2, "World" } };
 
     [Theory]
