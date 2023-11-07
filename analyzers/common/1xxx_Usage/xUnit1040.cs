@@ -2,22 +2,22 @@ using Xunit;
 
 public class xUnit1040
 {
-    public static TheoryData<int?, string?> FieldData =
-        new() { { 1, "Hello" }, { 2, "World" } };
+    public static TheoryData<string?> FieldData =
+        new() { "Hello", "World", null };
 
-    public static TheoryData<int?, string?> PropertyData =>
-        new() { { 1, "Hello" }, { 2, "World" } };
+    public static TheoryData<string?> PropertyData =>
+        new() { "Hello", "World", null };
 
-    public static TheoryData<int?, string?> MethodDataNoArgs() =>
-        new() { { 1, "Hello" }, { 2, "World" } };
+    public static TheoryData<string?> MethodDataNoArgs() =>
+        new() { "Hello", "World", null };
 
-    public static TheoryData<int?, string?> MethodDataWithArgs(int _) =>
-        new() { { 1, "Hello" }, { 2, "World" } };
+    public static TheoryData<string?> MethodDataWithArgs(int _) =>
+        new() { "Hello", "World", null };
 
     [Theory]
     [MemberData(nameof(FieldData))]
     [MemberData(nameof(PropertyData))]
     [MemberData(nameof(MethodDataNoArgs))]
     [MemberData(nameof(MethodDataWithArgs), 42)]
-    public void TestMethod(int _1, string _2) { }
+    public void TestMethod(string _) { }
 }
