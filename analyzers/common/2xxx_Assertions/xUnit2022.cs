@@ -1,6 +1,6 @@
 using Xunit;
 
-public class TestClass
+public class xUnit2022
 {
     [Fact]
     public void TestMethod()
