@@ -1,11 +1,10 @@
 ﻿#pragma warning disable CS8618 // Non-nullable field must contain a non-null value when exiting constructor. Consider declaring as nullable.
 
-using System.Collections.Generic;
 using Xunit;
 
 public class xUnit1021
 {
-    public static IEnumerable<object[]> TestData { get; set; }
+    public static TheoryData<int> TestData { get; set; }
 
     [Theory]
     [MemberData(nameof(TestData), "Hello world", 123)]

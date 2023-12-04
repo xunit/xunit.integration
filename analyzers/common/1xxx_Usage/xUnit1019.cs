@@ -2,7 +2,6 @@
 
 using System.Collections.Generic;
 using Xunit;
-using Xunit.Sdk;
 
 public class xUnit1019
 {
@@ -15,7 +14,7 @@ public class xUnit1019
     public void TestMethod(string _1, int _2) { }
 
 #if XUNIT_V3
-    public static List<TheoryDataRow> V3TestData;
+    public static List<Xunit.Sdk.TheoryDataRow> V3TestData;
 
     // This should not trigger with v3
     [Theory]
