@@ -1,7 +1,7 @@
 <Project>
 
   <PropertyGroup>
-    <XunitAnalyzersVersion>1.7.0-pre.19</XunitAnalyzersVersion>
+    <XunitAnalyzersVersion>1.7.0-pre.22</XunitAnalyzersVersion>
     <XunitV2Version>2.6.3-pre.5</XunitV2Version>
     <XunitV3Version>0.1.1-pre.328</XunitV3Version>
     <XunitRunnerVSVersion>2.5.5-pre.3</XunitRunnerVSVersion>

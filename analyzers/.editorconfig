@@ -66,6 +66,8 @@ dotnet_diagnostic.xUnit2020.severity = warning
 dotnet_diagnostic.xUnit2021.severity = warning
 dotnet_diagnostic.xUnit2022.severity = warning
 dotnet_diagnostic.xUnit2023.severity = warning
+dotnet_diagnostic.xUnit2024.severity = warning
+dotnet_diagnostic.xUnit2025.severity = warning
 
 dotnet_diagnostic.xUnit3000.severity = warning
 dotnet_diagnostic.xUnit3001.severity = warning
