@@ -2,9 +2,9 @@
 
   <PropertyGroup>
     <DefineConstants>$(DefineConstants);XUNIT_V2</DefineConstants>
-    <LangVersion>10.0</LangVersion>
+    <LangVersion>12.0</LangVersion>
     <Nullable>enable</Nullable>
-    <TargetFrameworks>net452;net6.0</TargetFrameworks>
+    <TargetFrameworks>net452;net8.0</TargetFrameworks>
   </PropertyGroup>
 
   <ItemGroup>

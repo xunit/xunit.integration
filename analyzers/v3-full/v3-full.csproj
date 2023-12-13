@@ -2,9 +2,9 @@
 
   <PropertyGroup>
     <DefineConstants>$(DefineConstants);XUNIT_V3;XUNIT_EXTENSIBILITY</DefineConstants>
-    <LangVersion>10.0</LangVersion>
+    <LangVersion>12.0</LangVersion>
     <Nullable>enable</Nullable>
-    <TargetFrameworks>net472;net6.0</TargetFrameworks>
+    <TargetFrameworks>net472;net8.0</TargetFrameworks>
   </PropertyGroup>
 
   <ItemGroup>
