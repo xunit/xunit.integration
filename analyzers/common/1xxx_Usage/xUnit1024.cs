@@ -1,4 +1,4 @@
-﻿#pragma warning disable xUnit1013 // Public method should be marked as test
+#pragma warning disable xUnit1013 // Public method should be marked as test
 
 using Xunit;
 

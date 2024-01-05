@@ -42,7 +42,7 @@ public class xUnit1030
         await Task.Delay(1).ConfigureAwait(false);
     }
 
-#if NETCOREAPP
+#if NET80_OR_GREATER
 
     [Fact]
     public async void TestMethodWithOptionsEnum()

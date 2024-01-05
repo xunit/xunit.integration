@@ -1,4 +1,4 @@
-﻿using Xunit;
+using Xunit;
 
 class xUnit1007_TestData { }
 

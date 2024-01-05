@@ -1,8 +1,15 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
+    <LangVersion>9.0</LangVersion>
+    <Nullable>enable</Nullable>
     <TargetFramework>net472</TargetFramework>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="..\analyzers\common\**\*.cs" />
+    <Compile Include="..\analyzers\v2-full\**\*.cs" Exclude="**\obj\**" />
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="xunit" Version="$(XunitV2Version)" />

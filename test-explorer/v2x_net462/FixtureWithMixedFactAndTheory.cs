@@ -1,4 +1,4 @@
-﻿#pragma warning disable xUnit1026
+#pragma warning disable xUnit1026
 
 using System.Collections;
 using System.Collections.Generic;

@@ -1,3 +1,5 @@
+#pragma warning disable xUnit2015
+
 using System;
 using System.ComponentModel;
 using Xunit;

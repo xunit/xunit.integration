@@ -1,4 +1,4 @@
-﻿public class ConcreteTestClass : AbstractTestClass
+public class ConcreteTestClass : AbstractTestClass
 {
 }
 

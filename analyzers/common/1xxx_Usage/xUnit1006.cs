@@ -1,4 +1,4 @@
-﻿#pragma warning disable xUnit1011 // There is no matching method parameter
+#pragma warning disable xUnit1011 // There is no matching method parameter
 
 using Xunit;
 
