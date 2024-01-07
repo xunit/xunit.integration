@@ -1,5 +1,6 @@
 #pragma warning disable xUnit1013 // Public method should be marked as test
 
+using System;
 using System.Threading.Tasks;
 using Xunit;
 
@@ -14,6 +15,10 @@ public class xUnit1031
         task.Wait();
         Task.WaitAny(task);
         Task.WaitAll(task);
+
+        // Shouldn't trigger in lambda or local function
+        Action _ = () => task.Wait();
+        void LocalFunction() => task.Wait();
     }
 
     [Fact]
@@ -25,6 +30,10 @@ public class xUnit1031
         task.Wait();
         Task.WaitAny(task);
         Task.WaitAll(task);
+
+        // Shouldn't trigger in lambda or local function
+        Action _ = () => task.Wait();
+        void LocalFunction() => task.Wait();
     }
 
     [Fact]
@@ -33,6 +42,10 @@ public class xUnit1031
         ValueTask task = default;
 
         task.GetAwaiter().GetResult();
+
+        // Shouldn't trigger in lambda or local function
+        Action _ = () => task.GetAwaiter().GetResult();
+        void LocalFunction() => task.GetAwaiter().GetResult();
     }
 
     [Fact]
@@ -41,6 +54,10 @@ public class xUnit1031
         ValueTask<int> task = new(0);
 
         task.GetAwaiter().GetResult();
+
+        // Shouldn't trigger in lambda or local function
+        Action _ = () => task.GetAwaiter().GetResult();
+        void LocalFunction() => task.GetAwaiter().GetResult();
     }
 
     // Ignore test methods which aren't directly Fact/Theory
