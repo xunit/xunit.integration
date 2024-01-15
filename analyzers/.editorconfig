@@ -42,6 +42,7 @@ dotnet_diagnostic.xUnit1039.severity = warning
 dotnet_diagnostic.xUnit1040.severity = warning
 dotnet_diagnostic.xUnit1041.severity = warning
 dotnet_diagnostic.xUnit1042.severity = warning
+dotnet_diagnostic.xUnit1043.severity = warning
 
 dotnet_diagnostic.xUnit2000.severity = warning
 dotnet_diagnostic.xUnit2001.severity = warning
@@ -68,6 +69,9 @@ dotnet_diagnostic.xUnit2022.severity = warning
 dotnet_diagnostic.xUnit2023.severity = warning
 dotnet_diagnostic.xUnit2024.severity = warning
 dotnet_diagnostic.xUnit2025.severity = warning
+dotnet_diagnostic.xUnit2026.severity = warning
+dotnet_diagnostic.xUnit2027.severity = warning
+dotnet_diagnostic.xUnit2028.severity = warning
 
 dotnet_diagnostic.xUnit3000.severity = warning
 dotnet_diagnostic.xUnit3001.severity = warning
