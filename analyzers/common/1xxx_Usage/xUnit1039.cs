@@ -20,4 +20,16 @@ public class xUnit1039
     [MemberData(nameof(MethodDataNoArgs))]
     [MemberData(nameof(MethodDataWithArgs), 42)]
     public void TestMethod(string _) { }
+
+    // Should not be reported despite tuple member names mismatching
+    public static TheoryData<(string, string)> UnnamedTupleData =>
+        new() { ("Hello", "world") };
+
+    public static TheoryData<(string baz, string biff)> MisnamedTupleData =>
+        new() { ("Hello", "world") };
+
+    [Theory]
+    [MemberData(nameof(UnnamedTupleData))]
+    [MemberData(nameof(MisnamedTupleData))]
+    public void TupleTestMethod((string foo, string bar) _) { }
 }
