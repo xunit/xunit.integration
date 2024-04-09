@@ -43,6 +43,10 @@ dotnet_diagnostic.xUnit1040.severity = warning
 dotnet_diagnostic.xUnit1041.severity = warning
 dotnet_diagnostic.xUnit1042.severity = warning
 dotnet_diagnostic.xUnit1043.severity = warning
+dotnet_diagnostic.xUnit1044.severity = warning
+dotnet_diagnostic.xUnit1045.severity = warning
+dotnet_diagnostic.xUnit1046.severity = warning
+dotnet_diagnostic.xUnit1047.severity = warning
 
 dotnet_diagnostic.xUnit2000.severity = warning
 dotnet_diagnostic.xUnit2001.severity = warning
@@ -79,7 +83,10 @@ dotnet_diagnostic.xUnit3001.severity = warning
 dotnet_diagnostic.CA1050.severity = none
 dotnet_diagnostic.CA2211.severity = none
 
+dotnet_diagnostic.CS1998.severity = none
 dotnet_diagnostic.CS8321.severity = none
+dotnet_diagnostic.CS8604.severity = none
+dotnet_diagnostic.CS8625.severity = none
 
 dotnet_diagnostic.IDE0039.severity = none
 dotnet_diagnostic.IDE0040.severity = none
