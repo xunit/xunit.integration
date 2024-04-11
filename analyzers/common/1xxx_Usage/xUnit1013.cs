@@ -1,4 +1,10 @@
+using System;
 using Xunit;
+
+public sealed class IgnoreXunitAnalyzersRule1013Attribute : Attribute { }
+
+[IgnoreXunitAnalyzersRule1013]
+public class CustomTestTypeAttribute : Attribute { }
 
 public abstract class xUnit1013_Base
 {
@@ -19,4 +25,9 @@ public class xUnit1013 : xUnit1013_Base
 
     // This should not trigger because the [Fact] comes from the base class
     public override void TestMethod4() { }
+
+    // This should not trigger because [CustomTestType] is decorated with an attribute which
+    // should suppress this rule
+    [CustomTestType]
+    public void TestMethod5() { }
 }

@@ -3,7 +3,7 @@ using Xunit;
 
 public class xUnit1045
 {
-    public static TheoryData<IDisposable> DataSource = [];
+    public static TheoryData<IDisposable> DataSource = new TheoryData<IDisposable>();
 
     [Theory]
     [MemberData(nameof(DataSource))]
