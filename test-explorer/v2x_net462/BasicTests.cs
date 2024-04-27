@@ -56,12 +56,16 @@ public class BasicTests
     [InlineData(2600)]                      // Not enough data
     public void InvalidTheory(int x, string y) { }
 
+#pragma warning disable xUnit1048 // Avoid using 'async void' for test methods as it is deprecated in xUnit.net v3
+
     [Fact]
     public async void FailingAsyncVoidTest()
     {
         await Task.Delay(0);
         Assert.True(false);
     }
+
+#pragma warning restore xUnit1048 // Avoid using 'async void' for test methods as it is deprecated in xUnit.net v3
 
     [Fact]
     public async Task FailingAsyncTaskTest()
