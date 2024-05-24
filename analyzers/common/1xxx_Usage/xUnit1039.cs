@@ -1,8 +1,12 @@
 #pragma warning disable xUnit1044  // Tuples are not serializable
 #pragma warning disable xUnit1046  // Tuples are not serializable
 
-using System.Collections.Generic;
 using Xunit;
+
+#if XUNIT_V3
+using System.Collections;
+using System.Collections.Generic;
+#endif
 
 public class xUnit1039
 {
@@ -19,6 +23,12 @@ public class xUnit1039
         new() { 1, 2, 3, n };
 
 #if XUNIT_V3
+
+    public class ClassRowData : IEnumerable<TheoryDataRow<int>>
+    {
+        public IEnumerator<TheoryDataRow<int>> GetEnumerator() => throw new System.NotImplementedException();
+        IEnumerator IEnumerable.GetEnumerator() => throw new System.NotImplementedException();
+    }
 
     public static IEnumerable<TheoryDataRow<int>> FieldRowData =
         [new(1), new(2), new(3)];
@@ -40,6 +50,7 @@ public class xUnit1039
     [MemberData(nameof(MethodDataNoArgs))]
     [MemberData(nameof(MethodDataWithArgs), 42)]
 #if XUNIT_V3
+    [ClassData(typeof(ClassRowData))]
     [MemberData(nameof(FieldRowData))]
     [MemberData(nameof(PropertyRowData))]
     [MemberData(nameof(MethodRowDataNoArgs))]

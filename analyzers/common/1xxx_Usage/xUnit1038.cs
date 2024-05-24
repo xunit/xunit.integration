@@ -1,5 +1,9 @@
-using System.Collections.Generic;
 using Xunit;
+
+#if XUNIT_V3
+using System.Collections;
+using System.Collections.Generic;
+#endif
 
 public class xUnit1038
 {
@@ -16,6 +20,12 @@ public class xUnit1038
         new() { { 1, "Hello" }, { 2, "World" } };
 
 #if XUNIT_V3
+
+    public class ClassRowData : IEnumerable<TheoryDataRow<int, string>>
+    {
+        public IEnumerator<TheoryDataRow<int, string>> GetEnumerator() => throw new System.NotImplementedException();
+        IEnumerator IEnumerable.GetEnumerator() => throw new System.NotImplementedException();
+    }
 
     public static IEnumerable<TheoryDataRow<int, string>> FieldRowData =
         [new(1, "Hello"), new(2, "World")];
@@ -37,6 +47,7 @@ public class xUnit1038
     [MemberData(nameof(MethodDataNoArgs))]
     [MemberData(nameof(MethodDataWithArgs), 42)]
 #if XUNIT_V3
+    [ClassData(typeof(ClassRowData))]
     [MemberData(nameof(FieldRowData))]
     [MemberData(nameof(PropertyRowData))]
     [MemberData(nameof(MethodRowDataNoArgs))]

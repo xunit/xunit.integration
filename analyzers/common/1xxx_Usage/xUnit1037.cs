@@ -1,5 +1,9 @@
-using System.Collections.Generic;
 using Xunit;
+
+#if XUNIT_V3
+using System.Collections.Generic;
+using System.Threading;
+#endif
 
 public class xUnit1037
 {
@@ -16,6 +20,11 @@ public class xUnit1037
         new() { 1, 2, 3, n };
 
 #if XUNIT_V3
+
+    public class ClassRowData : IAsyncEnumerable<TheoryDataRow<int>>
+    {
+        public IAsyncEnumerator<TheoryDataRow<int>> GetAsyncEnumerator(CancellationToken cancellationToken = default) => throw new System.NotImplementedException();
+    }
 
     public static IEnumerable<TheoryDataRow<int>> FieldRowData =
         [new(1), new(2), new(3), new(4)];
@@ -37,6 +46,7 @@ public class xUnit1037
     [MemberData(nameof(MethodDataNoArgs))]
     [MemberData(nameof(MethodDataWithArgs), 42)]
 #if XUNIT_V3
+    [ClassData(typeof(ClassRowData))]
     [MemberData(nameof(FieldRowData))]
     [MemberData(nameof(PropertyRowData))]
     [MemberData(nameof(MethodRowDataNoArgs))]

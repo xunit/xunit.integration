@@ -47,6 +47,9 @@ dotnet_diagnostic.xUnit1044.severity = warning
 dotnet_diagnostic.xUnit1045.severity = warning
 dotnet_diagnostic.xUnit1046.severity = warning
 dotnet_diagnostic.xUnit1047.severity = warning
+dotnet_diagnostic.xUnit1048.severity = warning
+dotnet_diagnostic.xUnit1049.severity = warning
+dotnet_diagnostic.xUnit1050.severity = warning
 
 dotnet_diagnostic.xUnit2000.severity = warning
 dotnet_diagnostic.xUnit2001.severity = warning
