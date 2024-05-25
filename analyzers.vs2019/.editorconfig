@@ -1,4 +1,4 @@
-﻿[*.cs]
+[*.cs]
 dotnet_diagnostic.xUnit1000.severity = warning
 dotnet_diagnostic.xUnit1001.severity = warning
 dotnet_diagnostic.xUnit1002.severity = warning
@@ -42,6 +42,14 @@ dotnet_diagnostic.xUnit1039.severity = warning
 dotnet_diagnostic.xUnit1040.severity = warning
 dotnet_diagnostic.xUnit1041.severity = warning
 dotnet_diagnostic.xUnit1042.severity = warning
+dotnet_diagnostic.xUnit1043.severity = warning
+dotnet_diagnostic.xUnit1044.severity = warning
+dotnet_diagnostic.xUnit1045.severity = warning
+dotnet_diagnostic.xUnit1046.severity = warning
+dotnet_diagnostic.xUnit1047.severity = warning
+dotnet_diagnostic.xUnit1048.severity = warning
+dotnet_diagnostic.xUnit1049.severity = warning
+dotnet_diagnostic.xUnit1050.severity = warning
 
 dotnet_diagnostic.xUnit2000.severity = warning
 dotnet_diagnostic.xUnit2001.severity = warning
@@ -68,6 +76,9 @@ dotnet_diagnostic.xUnit2022.severity = warning
 dotnet_diagnostic.xUnit2023.severity = warning
 dotnet_diagnostic.xUnit2024.severity = warning
 dotnet_diagnostic.xUnit2025.severity = warning
+dotnet_diagnostic.xUnit2026.severity = warning
+dotnet_diagnostic.xUnit2027.severity = warning
+dotnet_diagnostic.xUnit2028.severity = warning
 
 dotnet_diagnostic.xUnit3000.severity = warning
 dotnet_diagnostic.xUnit3001.severity = warning
@@ -75,8 +86,15 @@ dotnet_diagnostic.xUnit3001.severity = warning
 dotnet_diagnostic.CA1050.severity = none
 dotnet_diagnostic.CA2211.severity = none
 
+dotnet_diagnostic.CS1998.severity = none
+dotnet_diagnostic.CS8321.severity = none
+dotnet_diagnostic.CS8604.severity = none
+dotnet_diagnostic.CS8625.severity = none
+
+dotnet_diagnostic.IDE0039.severity = none
 dotnet_diagnostic.IDE0040.severity = none
 dotnet_diagnostic.IDE0051.severity = none
 dotnet_diagnostic.IDE0052.severity = none
 dotnet_diagnostic.IDE0060.severity = none
+dotnet_diagnostic.IDE0062.severity = none
 dotnet_diagnostic.IDE1006.severity = none

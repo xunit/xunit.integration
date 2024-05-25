@@ -1,5 +1,5 @@
 using System.Collections.Generic;
-using Xunit.Sdk;
+using Xunit;
 
 public class xUnit1046
 {
