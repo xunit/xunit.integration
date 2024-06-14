@@ -14,14 +14,14 @@
 
   <ItemGroup>
     <PackageReference Include="xunit.v3" Version="$(XunitV3Version)" />
-    <PackageReference Include="xunit.v3.runner.console" Version="$(XunitV3Version)">
+    <PackageReference Include="xunit.v3.runner.msbuild" Version="$(XunitV3Version)">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
     </PackageReference>
   </ItemGroup>
 
   <Target Name="Test" AfterTargets="Build">
-    <Exec Command="$(XunitConsolePath) &quot;$(TargetPath)&quot;" />
+    <xunit Assemblies="$(TargetPath)" />
   </Target>
 
 </Project>

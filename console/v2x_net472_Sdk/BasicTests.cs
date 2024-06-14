@@ -16,9 +16,9 @@ public class BasicTests
 
     [Theory]
     [InlineData(2112)]
-    [InlineData("hello from v3x_net472")]
-    [InlineData(new object?[] { null })]
-    public void Theory(object? value)
+    [InlineData("hello from v2x_net472_Sdk")]
+    [InlineData(null)]
+    public void Theory(object value)
     {
         Assert.NotNull(value);
     }

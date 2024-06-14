@@ -16,7 +16,7 @@ public class BasicTests
 
     [Theory]
     [InlineData(2112)]
-    [InlineData("hello from v3x_net472")]
+    [InlineData("hello from v3x_net60")]
     [InlineData(new object?[] { null })]
     public void Theory(object? value)
     {

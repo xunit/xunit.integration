@@ -5,23 +5,26 @@
     <LangVersion>10.0</LangVersion>
     <Nullable>enable</Nullable>
     <OutputType>Exe</OutputType>
-    <TargetFramework>net472</TargetFramework>
+    <TargetFramework>net6.0</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup>
     <Content Include="..\xunit.runner.json" CopyToOutputDirectory="PreserveNewest" />
   </ItemGroup>
 
+  <!-- TODO: Need a .NET Core version of the MSBuild runner first -->
+
   <ItemGroup>
     <PackageReference Include="xunit.v3" Version="$(XunitV3Version)" />
-    <PackageReference Include="xunit.v3.runner.console" Version="$(XunitV3Version)">
+    <!-- <PackageReference Include="xunit.v3.runner.msbuild" Version="$(XunitV3Version)">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
-    </PackageReference>
+    </PackageReference> -->
   </ItemGroup>
 
   <Target Name="Test" AfterTargets="Build">
-    <Exec Command="$(XunitConsolePath) &quot;$(TargetPath)&quot;" />
+    <!-- <xunit Assemblies="$(TargetPath)" /> -->
+    <Warning Text="TODO: Waiting for a .NET Core version of xunit.v3.runner.msbuild" />
   </Target>
 
 </Project>

@@ -9,13 +9,15 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="MSTest.TestAdapter" Version="3.4.3" />
-    <PackageReference Include="MSTest.TestFramework" Version="3.4.3" />
     <PackageReference Include="xunit" Version="$(XunitV2Version)" />
-    <PackageReference Include="xunit.runner.visualstudio" Version="$(XunitRunnerVSVersion)">
-      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    <PackageReference Include="xunit.v3.runner.msbuild" Version="$(XunitV3Version)">
       <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
     </PackageReference>
   </ItemGroup>
+
+  <Target Name="Test" AfterTargets="Build">
+    <xunit Assemblies="$(TargetPath)" />
+  </Target>
 
 </Project>
