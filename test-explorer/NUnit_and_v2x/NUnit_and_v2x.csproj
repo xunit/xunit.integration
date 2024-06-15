@@ -9,6 +9,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="$(MicrosoftNetTestSdkVersion)" />
     <PackageReference Include="NUnit" Version="[2.7.1]" />
     <PackageReference Include="NUnitTestAdapter" Version="2.3.0" />
     <PackageReference Include="xunit" Version="$(XunitV2Version)" />
