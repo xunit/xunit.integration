@@ -16,15 +16,14 @@
 
   <ItemGroup>
     <PackageReference Include="xunit.v3" Version="$(XunitV3Version)" />
-    <!-- <PackageReference Include="xunit.v3.runner.msbuild" Version="$(XunitV3Version)">
+    <PackageReference Include="xunit.v3.runner.msbuild" Version="$(XunitV3Version)">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
-    </PackageReference> -->
+    </PackageReference>
   </ItemGroup>
 
   <Target Name="Test" AfterTargets="Build">
-    <!-- <xunit Assemblies="$(TargetPath)" /> -->
-    <Warning Text="TODO: Waiting for a .NET Core version of xunit.v3.runner.msbuild" />
+    <xunit Assemblies="$(TargetPath)" />
   </Target>
 
 </Project>
