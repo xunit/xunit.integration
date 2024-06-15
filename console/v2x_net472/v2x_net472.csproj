@@ -57,6 +57,7 @@
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="Test" AfterTargets="Build">
-    <Exec Command="$(XunitConsolePath) &quot;$(TargetPath)&quot;" />
+    <Exec Command="$(XunitConsolePath) &quot;$(TargetPath)&quot;" Condition=" '$(OS)' == 'Windows_NT' "/>
+    <Exec Command="mono $(XunitConsolePath) &quot;$(TargetPath)&quot;" Condition=" '$(OS)' != 'Windows_NT' " />
   </Target>
 </Project>

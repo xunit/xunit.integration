@@ -1,3 +1,8 @@
+#!/usr/bin/env pwsh
+#Requires -Version 5.1
+
+# Restore first so the xunit MSBuild task can be found
+
 msbuild /t:Restore /v:minimal /nologo
 
 # v2 projects require the .NET Framework version of MSBuild

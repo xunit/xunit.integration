@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+
+msbuild /t:Restore /v:minimal /nologo
+
+# On non-Windows, use Mono to run all .NET Framework projects
+
+msbuild /v:minimal /nologo v2x_net472/v2x_net472.csproj
+
+# We can use .NET SDK for any SDK style project
+
+dotnet build -v:minimal --nologo v2x_net472_Sdk/v2x_net472_Sdk.csproj
+dotnet build -v:minimal --nologo v3x_net472/v3x_net472.csproj
+dotnet build -v:minimal --nologo v3x_net60/v3x_net60.csproj
