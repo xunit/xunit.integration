@@ -10,7 +10,7 @@
 
   <ItemGroup>
     <PackageReference Include="xunit" Version="$(XunitV2Version)" />
-    <PackageReference Include="xunit.v3.runner.console" Version="$(XunitV3Version)">
+    <PackageReference Include="xunit.runner.console" Version="$(XunitV2Version)">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
     </PackageReference>

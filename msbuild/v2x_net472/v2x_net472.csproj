@@ -32,7 +32,7 @@
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="xunit" Version="$(XunitV2Version)" />
-    <PackageReference Include="xunit.v3.runner.msbuild" Version="$(XunitV3Version)">
+    <PackageReference Include="xunit.runner.msbuild" Version="$(XunitV2Version)">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
     </PackageReference>
