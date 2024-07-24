@@ -9,7 +9,7 @@ using Xunit;
 public class xUnit1030
 {
     [Fact]
-    public async void TestMethod_Async()
+    public async Task TestMethod_Async()
     {
         var trueValue = true;
 
@@ -42,12 +42,12 @@ public class xUnit1030
     public class MyFactAttribute : FactAttribute { }
 
     [MyFact]
-    public async void TestMethod_Ignored()
+    public async Task TestMethod_Ignored()
     {
         await Task.Delay(1).ConfigureAwait(false);
     }
 
-    public async void NonTestMethod()
+    public async Task NonTestMethod()
     {
         await Task.Delay(1).ConfigureAwait(false);
     }
@@ -55,7 +55,7 @@ public class xUnit1030
 #if NET80_OR_GREATER
 
     [Fact]
-    public async void TestMethodWithOptionsEnum()
+    public async Task TestMethodWithOptionsEnum()
     {
         await Task.Delay(1).ConfigureAwait(ConfigureAwaitOptions.SuppressThrowing);
     }
