@@ -80,13 +80,16 @@ dotnet_diagnostic.xUnit2026.severity = warning
 dotnet_diagnostic.xUnit2027.severity = warning
 dotnet_diagnostic.xUnit2028.severity = warning
 dotnet_diagnostic.xUnit2029.severity = warning
+dotnet_diagnostic.xUnit2030.severity = warning
 
 dotnet_diagnostic.xUnit3000.severity = warning
 dotnet_diagnostic.xUnit3001.severity = warning
+dotnet_diagnostic.xUnit3002.severity = warning
 
 dotnet_diagnostic.CA1050.severity = none
 dotnet_diagnostic.CA2211.severity = none
 
+dotnet_diagnostic.CS0067.severity = none
 dotnet_diagnostic.CS1998.severity = none
 dotnet_diagnostic.CS8321.severity = none
 dotnet_diagnostic.CS8604.severity = none
