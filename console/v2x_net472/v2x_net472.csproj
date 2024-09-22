@@ -56,7 +56,7 @@
     <Content Include="..\xunit.runner.json" CopyToOutputDirectory="PreserveNewest" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <Target Name="Test" AfterTargets="Build">
+  <Target Name="XunitTest" AfterTargets="Build">
     <Exec Command="$(XunitConsolePath) &quot;$(TargetPath)&quot;" Condition=" '$(OS)' == 'Windows_NT' "/>
     <Exec Command="mono $(XunitConsolePath) &quot;$(TargetPath)&quot;" Condition=" '$(OS)' != 'Windows_NT' " />
   </Target>

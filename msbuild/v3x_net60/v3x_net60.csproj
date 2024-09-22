@@ -12,8 +12,6 @@
     <Content Include="..\xunit.runner.json" CopyToOutputDirectory="PreserveNewest" />
   </ItemGroup>
 
-  <!-- TODO: Need a .NET Core version of the MSBuild runner first -->
-
   <ItemGroup>
     <PackageReference Include="xunit.v3" Version="$(XunitV3Version)" />
     <PackageReference Include="xunit.v3.runner.msbuild" Version="$(XunitV3Version)">
@@ -22,7 +20,7 @@
     </PackageReference>
   </ItemGroup>
 
-  <Target Name="Test" AfterTargets="Build">
+  <Target Name="XunitTest" AfterTargets="Build">
     <xunit Assemblies="$(TargetPath)" />
   </Target>
 

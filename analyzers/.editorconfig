@@ -82,6 +82,7 @@ dotnet_diagnostic.xUnit2027.severity = warning
 dotnet_diagnostic.xUnit2028.severity = warning
 dotnet_diagnostic.xUnit2029.severity = warning
 dotnet_diagnostic.xUnit2030.severity = warning
+dotnet_diagnostic.xUnit2031.severity = warning
 
 dotnet_diagnostic.xUnit3000.severity = warning
 dotnet_diagnostic.xUnit3001.severity = warning

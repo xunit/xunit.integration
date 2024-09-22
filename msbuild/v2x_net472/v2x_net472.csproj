@@ -58,7 +58,7 @@
     <Content Include="..\xunit.runner.json" CopyToOutputDirectory="PreserveNewest" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <Target Name="Test" AfterTargets="Build">
+  <Target Name="XunitTest" AfterTargets="Build">
     <xunit Assemblies="$(TargetPath)" />
   </Target>
 </Project>
