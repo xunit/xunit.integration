@@ -20,7 +20,7 @@
     </PackageReference>
   </ItemGroup>
 
-  <Target Name="XunitTest" AfterTargets="Build">
+  <Target Name="XunitTest">
     <xunit Assemblies="$(TargetPath)" />
   </Target>
 
