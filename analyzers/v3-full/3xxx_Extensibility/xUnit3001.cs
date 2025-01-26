@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 using System.Threading.Tasks;
 using Xunit.Runner.Common;
 using Xunit.Sdk;
@@ -32,7 +33,11 @@ public class xUnit3001Serializer : IXunitSerializer
 
     public object Deserialize(Type type, string serializedValue) => new();
 
-    public bool IsSerializable(Type type, object? value) => true;
+    public bool IsSerializable(Type type, object? value, [NotNullWhen(false)] out string? failureReason)
+    {
+        failureReason = null;
+        return true;
+    }
 
     public string Serialize(object value) => string.Empty;
 }
