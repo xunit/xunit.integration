@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "v2x_net472_Sdk", "v2x_net47
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "v3x_net472", "v3x_net472\v3x_net472.csproj", "{4FCDB11E-9A3D-4C18-9BC1-AB548A55D28F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "v3x_net60", "v3x_net60\v3x_net60.csproj", "{96A6FEAE-E66E-4AA2-BC16-FD51DD5C543C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "v3x_net80", "v3x_net80\v3x_net80.csproj", "{96A6FEAE-E66E-4AA2-BC16-FD51DD5C543C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

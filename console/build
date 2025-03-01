@@ -10,4 +10,4 @@ msbuild /v:minimal /nologo v2x_net472/v2x_net472.csproj
 
 dotnet build -v:minimal --nologo v2x_net472_Sdk/v2x_net472_Sdk.csproj -tl:off
 dotnet build -v:minimal --nologo v3x_net472/v3x_net472.csproj -tl:off
-dotnet build -v:minimal --nologo v3x_net60/v3x_net60.csproj -tl:off
+dotnet build -v:minimal --nologo v3x_net80/v3x_net80.csproj -tl:off

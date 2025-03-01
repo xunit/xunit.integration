@@ -15,4 +15,4 @@ msbuild /t:XunitTest /v:minimal /nologo v2x_net472_Sdk\v2x_net472_Sdk.csproj
 write-host ""
 dotnet msbuild /t:XunitTest /v:minimal /nologo v3x_net472\v3x_net472.csproj -tl:off
 write-host ""
-dotnet msbuild /t:XunitTest /v:minimal /nologo v3x_net60\v3x_net60.csproj -tl:off
+dotnet msbuild /t:XunitTest /v:minimal /nologo v3x_net80\v3x_net80.csproj -tl:off

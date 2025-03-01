@@ -25,7 +25,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "v3.x", "v3.x", "{84DBDE1A-6
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "v3x_net472", "v3x_net472\v3x_net472.csproj", "{572D3DF1-9AFA-4955-B48B-B31856526240}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "v3x_net60", "v3x_net60\v3x_net60.csproj", "{E684A394-4EAF-475B-8EE6-7CDDDEBF0ECE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "v3x_net80", "v3x_net80\v3x_net80.csproj", "{E684A394-4EAF-475B-8EE6-7CDDDEBF0ECE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
