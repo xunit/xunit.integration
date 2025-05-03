@@ -2,6 +2,8 @@
   <Import Project="..\Directory.Build.props" />
 
   <PropertyGroup>
+    <!-- Enable this and restart VS to force v3 projects to run in VSTest mode -->
+    <!--<DisableTestingPlatformServerCapability>true</DisableTestingPlatformServerCapability>-->
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
   </PropertyGroup>
 

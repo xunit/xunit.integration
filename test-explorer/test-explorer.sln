@@ -19,7 +19,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "v2x_net472_OldProject", "v2
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "v2x_net472_ReferencingProject", "v2x_net472_ReferencingProject\v2x_net472_ReferencingProject.csproj", "{B15AFC6F-D6DA-4F24-B120-0757651C68D4}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "v2x_net60", "v2x_net60\v2x_net60.csproj", "{AD22995C-97BD-4D5E-87F8-3B640D4D4B62}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "v2x_net80", "v2x_net80\v2x_net80.csproj", "{AD22995C-97BD-4D5E-87F8-3B640D4D4B62}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "v3.x", "v3.x", "{84DBDE1A-6BE7-485A-819A-95042D690461}"
 EndProject
