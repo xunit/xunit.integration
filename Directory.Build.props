@@ -1,11 +1,11 @@
 <Project>
 
   <PropertyGroup>
-    <MicrosoftNetTestSdkVersion>17.13.0</MicrosoftNetTestSdkVersion>
-    <XunitAnalyzersVersion>1.21.0</XunitAnalyzersVersion>
+    <MicrosoftNetTestSdkVersion>17.14.1</MicrosoftNetTestSdkVersion>
+    <XunitAnalyzersVersion>1.22.0</XunitAnalyzersVersion>
     <XunitV2Version>2.9.3</XunitV2Version>
-    <XunitV3Version>2.0.2</XunitV3Version>
-    <XunitRunnerVSVersion>3.1.0</XunitRunnerVSVersion>
+    <XunitV3Version>2.0.3</XunitV3Version>
+    <XunitRunnerVSVersion>3.1.1</XunitRunnerVSVersion>
   </PropertyGroup>
   
 </Project>
