@@ -2,9 +2,9 @@
 
   <PropertyGroup>
     <MicrosoftNetTestSdkVersion>17.14.1</MicrosoftNetTestSdkVersion>
-    <XunitAnalyzersVersion>1.23.0-pre.3</XunitAnalyzersVersion>
+    <XunitAnalyzersVersion>1.23.0-pre.7</XunitAnalyzersVersion>
     <XunitV2Version>2.9.3</XunitV2Version>
-    <XunitV3Version>3.0.0-pre.25</XunitV3Version>
+    <XunitV3Version>3.0.0-pre.41</XunitV3Version>
     <XunitRunnerVSVersion>3.1.1</XunitRunnerVSVersion>
   </PropertyGroup>
   
