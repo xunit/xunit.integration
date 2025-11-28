@@ -92,6 +92,7 @@ dotnet_diagnostic.xUnit3001.severity = warning
 dotnet_diagnostic.xUnit3002.severity = warning
 
 dotnet_diagnostic.CA1050.severity = none
+dotnet_diagnostic.CA1822.severity = none
 dotnet_diagnostic.CA2211.severity = none
 
 dotnet_diagnostic.CS0067.severity = none
