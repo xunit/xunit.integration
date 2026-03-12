@@ -1,9 +1,14 @@
 using System;
 using System.Collections.Generic;
-using System.Diagnostics.CodeAnalysis;
 using System.Threading.Tasks;
 using Xunit.Runner.Common;
 using Xunit.Sdk;
+
+#if !XUNIT_AOT
+using System.Diagnostics.CodeAnalysis;
+#endif
+
+#if !XUNIT_AOT
 
 public class xUnit3001 : IXunitSerializable
 {
@@ -15,6 +20,8 @@ public class xUnit3001 : IXunitSerializable
     public void Serialize(IXunitSerializationInfo info) { }
 }
 
+#endif
+
 [JsonTypeID("json-type")]
 public class xUnit3001Json : IJsonSerializable, IJsonDeserializable
 {
@@ -25,6 +32,8 @@ public class xUnit3001Json : IJsonSerializable, IJsonDeserializable
 
     public string? ToJson() => "{}";
 }
+
+#if !XUNIT_AOT
 
 public class xUnit3001Serializer : IXunitSerializer
 {
@@ -41,6 +50,8 @@ public class xUnit3001Serializer : IXunitSerializer
 
     public string Serialize(object value) => string.Empty;
 }
+
+#endif
 
 public class xUnit3001Reporter : IRunnerReporter
 {

@@ -39,6 +39,8 @@ public class xUnit1030
         void LocalFunction() => Task.Delay(1).ConfigureAwait(false).GetAwaiter().GetResult();
     }
 
+#if !XUNIT_AOT
+
     public class MyFactAttribute : FactAttribute { }
 
     [MyFact]
@@ -46,6 +48,8 @@ public class xUnit1030
     {
         await Task.Delay(1).ConfigureAwait(false);
     }
+
+#endif
 
     public async Task NonTestMethod()
     {

@@ -1,0 +1,18 @@
+<Solution>
+  <Folder Name="/v1.x/">
+    <Project Path="v1x_net472/v1x_net472.csproj" />
+  </Folder>
+  <Folder Name="/v2.x/">
+    <Project Path="MSTest_and_v2x/MSTest_and_v2x.csproj" />
+    <Project Path="v2x_net472/v2x_net472.csproj" />
+    <Project Path="v2x_net472_FSharp/v2x_net472_FSharp.fsproj" />
+    <Project Path="v2x_net472_OldProject/v2x_net472_OldProject.csproj" Id="06d874bc-29fe-4b68-aa7f-b4654aa4520a" />
+    <Project Path="v2x_net472_ReferencingProject/v2x_net472_ReferencingProject.csproj" />
+    <Project Path="v2x_net80/v2x_net80.csproj" />
+  </Folder>
+  <Folder Name="/v3.x/">
+    <Project Path="v3x_net472/v3x_net472.csproj" />
+    <Project Path="v3x_net80/v3x_net80.csproj" />
+    <Project Path="v3x_net90_aot/v3x_net90_aot.csproj" />
+  </Folder>
+</Solution>

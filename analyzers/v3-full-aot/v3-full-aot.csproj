@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <DefineConstants>$(DefineConstants);XUNIT_AOT;XUNIT_V3;XUNIT_EXTENSIBILITY</DefineConstants>
+    <Nullable>enable</Nullable>
+    <OutputType>Exe</OutputType>
+    <PublishAot>true</PublishAot>
+    <TargetFramework>net9.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="..\common\1xxx_Usage\*.cs" LinkBase="1xxx_Usage" />
+    <Compile Include="..\common\2xxx_Assertions\*.cs" LinkBase="2xxx_Assertions" />
+    <Compile Include="..\common\3xxx_Extensibility\*.cs" LinkBase="3xxx_Extensibility" />
+    <Compile Include="..\v3-full\**\*.cs" Exclude="**\obj\**\*.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Primitives" Version="8.0.0" />
+    <PackageReference Include="System.ValueTuple" Version="4.5.0" />
+    <PackageReference Include="xunit.analyzers" Version="$(XunitAnalyzersVersion)" />
+    <PackageReference Include="xunit.v3.assert.aot" Version="$(XunitV3Version)" />
+    <PackageReference Include="xunit.v3.core.aot" Version="$(XunitV3Version)" />
+  </ItemGroup>
+
+</Project>

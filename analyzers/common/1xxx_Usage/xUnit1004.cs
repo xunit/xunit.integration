@@ -7,9 +7,10 @@ public class xUnit1004
 
 #if XUNIT_V3 && NETCOREAPP
 
-    [Fact(Skip = "Requires Windows",
-          SkipUnless = nameof(System.OperatingSystem.IsWindows),
-          SkipType = typeof(System.OperatingSystem))]
+    public static bool IsWindows => System.OperatingSystem.IsWindows();
+
+    // Should not trigger, since it's conditional
+    [Fact(Skip = "Requires Windows", SkipUnless = nameof(IsWindows))]
     public void WindowsTest() { }
 
 #endif

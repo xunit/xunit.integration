@@ -1,0 +1,12 @@
+<Solution>
+  <Folder Name="/Meta/">
+    <File Path="../Directory.Build.props" />
+    <File Path=".editorconfig" />
+  </Folder>
+  <Project Path="v2-abstractions/v2-abstractions.csproj" />
+  <Project Path="v2-core/v2-core.csproj" />
+  <Project Path="v2-execution/v2-execution.csproj" />
+  <Project Path="v2-full/v2-full.csproj" />
+  <Project Path="v3-full/v3-full.csproj" />
+  <Project Path="v3-full-aot/v3-full-aot.csproj" />
+</Solution>

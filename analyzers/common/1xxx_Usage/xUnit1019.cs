@@ -7,7 +7,7 @@ using Xunit;
 
 public class xUnit1019
 {
-    public static IEnumerable<object> TestData;
+    public static IEnumerable<int> TestData;
     public static Task<IEnumerable<object[]>> TaskTestData;
     public static Task<IAsyncEnumerable<object[]>> AsyncTaskTestData;
     public static ValueTask<IEnumerable<object[]>> ValueTaskTestData;

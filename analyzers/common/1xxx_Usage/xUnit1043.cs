@@ -1,3 +1,5 @@
+#if !XUNIT_AOT
+
 using System;
 using Xunit;
 
@@ -12,3 +14,5 @@ public class xUnit1043
     [CustomFact]
     public void TestMethod() { }
 }
+
+#endif

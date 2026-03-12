@@ -4,8 +4,8 @@
     <MicrosoftNetTestSdkVersion>18.0.1</MicrosoftNetTestSdkVersion>
     <XunitAnalyzersVersion>1.27.0</XunitAnalyzersVersion>
     <XunitV2Version>2.9.3</XunitV2Version>
-    <XunitV3Version>3.2.2</XunitV3Version>
+    <XunitV3Version>4.0.0-pre.19</XunitV3Version>
     <XunitRunnerVSVersion>3.1.5</XunitRunnerVSVersion>
   </PropertyGroup>
-  
+
 </Project>

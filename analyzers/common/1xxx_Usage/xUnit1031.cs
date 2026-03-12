@@ -61,6 +61,8 @@ public class xUnit1031
         void LocalFunction() => task.GetAwaiter().GetResult();
     }
 
+#if !XUNIT_AOT
+
     // Ignore test methods which aren't directly Fact/Theory
 
     public class MyFactAttribute : FactAttribute { }
@@ -70,6 +72,8 @@ public class xUnit1031
     {
         var _ = Task.FromResult(0).GetAwaiter().GetResult();
     }
+
+#endif
 
     // Ignore non-test methods
 
