@@ -1,6 +1,6 @@
 using Xunit;
 
-public class xUnit9009
+public class xUnit1061
 {
     [Fact]
     public void TestMethod<T>()

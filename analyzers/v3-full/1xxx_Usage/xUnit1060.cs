@@ -1,8 +1,8 @@
 using Xunit;
 
-public class xUnit9008
+public class xUnit1060
 {
-    [CulturedFact([])]
+    [CulturedFact(new string[] { })]
     public void FactMethod()
     { }
 

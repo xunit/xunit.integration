@@ -1,7 +1,7 @@
 using System.Linq;
 using Xunit;
 
-public class xUnit9014
+public class xUnit1066
 {
     public static TheoryData<int> DataSource(params int[] multipliers) =>
         [multipliers.Aggregate(42, (left, right) => left * right)];

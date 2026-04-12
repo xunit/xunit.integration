@@ -1,5 +1,5 @@
 using Xunit;
 
 [CollectionDefinition]
-public class xUnit9005<TUnsupported>
+public class xUnit1058<TUnsupported>
 { }

@@ -1,6 +1,6 @@
 using Xunit;
 
-public class xUnit9015
+public class xUnit1067
 {
     public static TheoryData<int> DataSource(int multiplier) => [42 * multiplier];
 

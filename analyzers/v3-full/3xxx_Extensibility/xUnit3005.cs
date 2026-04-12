@@ -1,5 +1,3 @@
-#pragma warning disable CS9113
-
 using System.Reflection;
 using Xunit;
 using Xunit.v3;

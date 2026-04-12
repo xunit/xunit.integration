@@ -1,6 +1,6 @@
 using Xunit;
 
-public class xUnit9002
+public class xUnit1054
 {
     public static TheoryData<int> DataSource = [42, 2112];
     public static int ReturningInt => 42;

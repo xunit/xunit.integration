@@ -1,6 +1,8 @@
+#pragma warning disable xUnit1026
+
 using Xunit;
 
-public class xUnit9010
+public class xUnit1062
 {
     [Theory]
     [InlineData(42)]
