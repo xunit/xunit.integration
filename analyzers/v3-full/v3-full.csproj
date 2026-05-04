@@ -10,8 +10,11 @@
 
   <ItemGroup>
     <Compile Include="..\common\1xxx_Usage\*.cs" LinkBase="1xxx_Usage" />
+    <Compile Include="..\common\1xxx_Usage_v3\*.cs" LinkBase="1xxx_Usage" />
     <Compile Include="..\common\2xxx_Assertions\*.cs" LinkBase="2xxx_Assertions" />
+    <Compile Include="..\common\2xxx_Assertions_v3\*.cs" LinkBase="2xxx_Assertions" />
     <Compile Include="..\common\3xxx_Extensibility\*.cs" LinkBase="3xxx_Extensibility" />
+    <Compile Include="..\common\3xxx_Extensibility_v3\*.cs" LinkBase="3xxx_Extensibility" />
   </ItemGroup>
 
   <ItemGroup>
