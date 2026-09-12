@@ -7,37 +7,33 @@ using System.Collections.Generic;
 
 public class xUnit1038
 {
-    public static TheoryData<int, string> FieldData =
-        new() { { 1, "Hello" }, { 2, "World" } };
-
-    public static TheoryData<int, string> PropertyData =>
-        new() { { 1, "Hello" }, { 2, "World" } };
-
-    public static TheoryData<int, string> MethodDataNoArgs() =>
-        new() { { 1, "Hello" }, { 2, "World" } };
-
-    public static TheoryData<int, string> MethodDataWithArgs(int _) =>
-        new() { { 1, "Hello" }, { 2, "World" } };
+    public static TheoryData<int, string> FieldData = [];
+    public static TheoryData<int, string> PropertyData => [];
+    public static TheoryData<int, string> MethodDataNoArgs() => [];
+    public static TheoryData<int, string> MethodDataWithArgs(int _) => [];
 
 #if XUNIT_V3
 
-    public class ClassRowData : IEnumerable<TheoryDataRow<int, string>>
+    public class ClassRowData_TheoryDataRow : IEnumerable<TheoryDataRow<int, string>>
     {
         public IEnumerator<TheoryDataRow<int, string>> GetEnumerator() => throw new System.NotImplementedException();
         IEnumerator IEnumerable.GetEnumerator() => throw new System.NotImplementedException();
     }
 
-    public static IEnumerable<TheoryDataRow<int, string>> FieldRowData =
-        [new(1, "Hello"), new(2, "World")];
+    public class ClassRowData_Tuple : IEnumerable<TheoryDataRow<int, string>>
+    {
+        public IEnumerator<TheoryDataRow<int, string>> GetEnumerator() => throw new System.NotImplementedException();
+        IEnumerator IEnumerable.GetEnumerator() => throw new System.NotImplementedException();
+    }
 
-    public static IEnumerable<TheoryDataRow<int, string>> PropertyRowData =>
-        [new(1, "Hello"), new(2, "World")];
-
-    public static IEnumerable<TheoryDataRow<int, string>> MethodRowDataNoArgs() =>
-        [new(1, "Hello"), new(2, "World")];
-
-    public static IEnumerable<TheoryDataRow<int, string>> MethodRowDataWithArgs(int _) =>
-        [new(1, "Hello"), new(2, "World")];
+    public static IEnumerable<TheoryDataRow<int, string>> FieldRowData_TheoryDataRow = [];
+    public static IEnumerable<(int, string)> FieldRowData_Tuple = [];
+    public static IEnumerable<TheoryDataRow<int, string>> PropertyRowData_TheoryDataRow => [];
+    public static IEnumerable<(int, string)> PropertyRowData_Tuple => [];
+    public static IEnumerable<TheoryDataRow<int, string>> MethodRowDataNoArgs_TheoryDataRow() => [];
+    public static IEnumerable<(int, string)> MethodRowDataNoArgs_Tuple() => [];
+    public static IEnumerable<TheoryDataRow<int, string>> MethodRowDataWithArgs_TheoryDataRow(int _) => [];
+    public static IEnumerable<(int, string)> MethodRowDataWithArgs_Tuple(int _) => [];
 
 #endif
 
@@ -47,11 +43,16 @@ public class xUnit1038
     [MemberData(nameof(MethodDataNoArgs))]
     [MemberData(nameof(MethodDataWithArgs), 42)]
 #if XUNIT_V3
-    [ClassData(typeof(ClassRowData))]
-    [MemberData(nameof(FieldRowData))]
-    [MemberData(nameof(PropertyRowData))]
-    [MemberData(nameof(MethodRowDataNoArgs))]
-    [MemberData(nameof(MethodRowDataWithArgs), 42)]
+    [ClassData(typeof(ClassRowData_TheoryDataRow))]
+    [MemberData(nameof(FieldRowData_TheoryDataRow))]
+    [MemberData(nameof(PropertyRowData_TheoryDataRow))]
+    [MemberData(nameof(MethodRowDataNoArgs_TheoryDataRow))]
+    [MemberData(nameof(MethodRowDataWithArgs_TheoryDataRow), 42)]
+    [ClassData(typeof(ClassRowData_Tuple))]
+    [MemberData(nameof(FieldRowData_Tuple))]
+    [MemberData(nameof(PropertyRowData_Tuple))]
+    [MemberData(nameof(MethodRowDataNoArgs_Tuple))]
+    [MemberData(nameof(MethodRowDataWithArgs_Tuple), 42)]
 #endif
     public void TestMethod(int _) { }
 }
