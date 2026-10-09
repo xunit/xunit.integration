@@ -25,4 +25,8 @@
     <PackageReference Include="xunit.v3.core.aot" Version="$(XunitV3Version)" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Reference Include="reference" HintPath="..\reference\bin\$(Configuration)\net9.0\reference.dll" />
+  </ItemGroup>
+
 </Project>

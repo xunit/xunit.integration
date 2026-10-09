@@ -14,7 +14,9 @@ public class BasicTests
         Assert.True(false);
     }
 
-    [Theory]
+    // Technically, VSTest isn't support for Native AOT, because there's no serialization. However,
+    // the tests will still run so long as pre-enumeration is completely turned off.
+    [Theory(DisableDiscoveryEnumeration = true)]
     [InlineData(2112)]
     [InlineData("hello from v3x_net90_aot")]
     [InlineData(new object?[] { null })]

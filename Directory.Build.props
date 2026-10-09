@@ -1,11 +1,12 @@
 <Project>
 
   <PropertyGroup>
-    <MicrosoftNetTestSdkVersion>18.9.0</MicrosoftNetTestSdkVersion>
-    <XunitAnalyzersVersion>2.2.0-pre.21</XunitAnalyzersVersion>
+    <!--<EmitCompilerGeneratedFiles>true</EmitCompilerGeneratedFiles>-->
+    <MicrosoftNetTestSdkVersion>18.10.1</MicrosoftNetTestSdkVersion>
+    <XunitAnalyzersVersion>2.2.0</XunitAnalyzersVersion>
     <XunitV2Version>2.9.3</XunitV2Version>
-    <XunitV3Version>4.0.2-pre.6</XunitV3Version>
-    <XunitRunnerVSVersion>4.0.1-pre.4</XunitRunnerVSVersion>
+    <XunitV3Version>4.0.2</XunitV3Version>
+    <XunitRunnerVSVersion>4.0.1</XunitRunnerVSVersion>
   </PropertyGroup>
 
 </Project>
