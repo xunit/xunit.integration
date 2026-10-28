@@ -3,9 +3,9 @@
   <PropertyGroup>
     <!--<EmitCompilerGeneratedFiles>true</EmitCompilerGeneratedFiles>-->
     <MicrosoftNetTestSdkVersion>18.10.1</MicrosoftNetTestSdkVersion>
-    <XunitAnalyzersVersion>2.2.0</XunitAnalyzersVersion>
+    <XunitAnalyzersVersion>2.3.0-pre.4</XunitAnalyzersVersion>
     <XunitV2Version>2.9.3</XunitV2Version>
-    <XunitV3Version>4.0.2</XunitV3Version>
+    <XunitV3Version>4.0.3-pre.14</XunitV3Version>
     <XunitRunnerVSVersion>4.0.1</XunitRunnerVSVersion>
   </PropertyGroup>
 
