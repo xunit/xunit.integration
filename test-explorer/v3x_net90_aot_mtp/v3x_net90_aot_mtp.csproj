@@ -14,12 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="$(MicrosoftNetTestSdkVersion)" />
-    <PackageReference Include="xunit.v3.aot.mtp-off" Version="$(XunitV3Version)" />
-    <PackageReference Include="xunit.runner.visualstudio" Version="$(XunitRunnerVSVersion)">
-      <PrivateAssets>all</PrivateAssets>
-      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
-    </PackageReference>
+    <PackageReference Include="xunit.v3.aot.mtp-v2" Version="$(XunitV3Version)" />
   </ItemGroup>
 
 </Project>
