@@ -1,5 +1,9 @@
-#pragma warning disable CS8618     // Non-nullable field must contain a non-null value when exiting constructor. Consider declaring as nullable.
-#pragma warning disable xUnit1042  // object[]/ITheoryDataRow isn't type safe, but it is still legal and shouldn't trigger xUnit1019.
+#pragma warning disable CS8618
+#pragma warning disable xUnit1053
+
+#if XUNIT_V3
+#pragma warning disable xUnit1042
+#endif
 
 using System.Collections.Generic;
 using System.Threading.Tasks;

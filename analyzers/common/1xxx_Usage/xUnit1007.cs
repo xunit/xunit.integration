@@ -1,4 +1,4 @@
-#pragma warning disable xUnit1050 // The class referenced by the ClassData attribute returns untyped data rows
+#pragma warning disable xUnit1050
 
 using System.Collections.Generic;
 using System.Threading;

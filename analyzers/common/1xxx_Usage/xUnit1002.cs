@@ -1,5 +1,5 @@
-#pragma warning disable xUnit1003 // Theory methods must have test data
-#pragma warning disable xUnit1006 // Theory methods should have parameters
+#pragma warning disable xUnit1003
+#pragma warning disable xUnit1006
 
 using Xunit;
 

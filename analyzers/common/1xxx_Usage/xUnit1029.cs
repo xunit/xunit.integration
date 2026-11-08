@@ -1,4 +1,4 @@
-#pragma warning disable CS8321 // Local function is declared but never used
+#pragma warning disable CS8321
 
 using Xunit;
 

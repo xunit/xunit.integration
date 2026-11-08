@@ -1,5 +1,6 @@
-#pragma warning disable xUnit1013 // Public method should be marked as test
-#pragma warning disable xUnit1051 // Calls to methods which accept CancellationToken should use TestContext.Current.CancellationToken
+#pragma warning disable xUnit1013
+#pragma warning disable xUnit1051
+#pragma warning disable xUnit3003
 
 using System;
 using System.Threading.Tasks;

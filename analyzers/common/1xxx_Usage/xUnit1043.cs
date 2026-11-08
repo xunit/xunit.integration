@@ -1,3 +1,5 @@
+#pragma warning disable xUnit3003
+
 #if !XUNIT_AOT
 
 using System;
