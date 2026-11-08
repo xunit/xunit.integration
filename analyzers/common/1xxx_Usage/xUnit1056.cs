@@ -1,4 +1,5 @@
 #pragma warning disable xUnit1033
+#pragma warning disable xUnit1073
 
 using Xunit;
 

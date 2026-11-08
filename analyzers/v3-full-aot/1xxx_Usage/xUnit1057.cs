@@ -1,3 +1,5 @@
+#pragma warning disable xUnit1073
+
 using Xunit;
 using Xunit.v3;
 
